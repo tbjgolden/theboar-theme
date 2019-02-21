@@ -12,9 +12,6 @@ ini_set('display_errors', 1);
  * @since 1.0.0
  */
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 $classes = join(' ', array_filter(get_post_class(), function ($class_name) {
   return $class_name !== 'entry';
 })) . ' cell';

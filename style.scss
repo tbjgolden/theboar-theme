@@ -231,6 +231,12 @@ $categories: (
   }
 
   .cell.cell-cat-#{$cat-id} {
+    &:hover,
+    &:active,
+    &:focus {
+      outline: 4px solid $color;
+    }
+
     .cell-header::before {
       background-color: $color !important;
     }
