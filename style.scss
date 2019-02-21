@@ -448,3 +448,16 @@ body.single-post {
     }
   }
 }
+
+.crp_related_list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+
+  .crp_related_item {
+    flex: 1 0 auto;
+    width: 228px;
+    max-width: 100%;
+  }
+}
