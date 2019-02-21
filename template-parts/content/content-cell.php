@@ -2,16 +2,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-/**
- * Template part for displaying blocks in main pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since 1.0.0
- */
-
 $classes = join(' ', array_filter(get_post_class(), function ($class_name) {
   return $class_name !== 'entry';
 })) . ' cell';
