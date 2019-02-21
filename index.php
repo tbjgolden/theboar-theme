@@ -32,7 +32,20 @@ get_header();
           $GLOBALS['POST_COUNT'] += 1;
         }
       }
+      ?>
 
+      <div class="cell sponsors">
+        <div class="sponsors-slider">
+          <a class="sponsor showing" href="https://warwick.ac.uk/services/sport/join/?utm_source=theboar.org&utm_medium=banner&fbclid=IwAR2X6Nfg9Yoz-w88MiBLJpOdJLDuk0bxCC3TTjzlL6UTsxok9JP0skjtgGQ" target="_blank">
+            <img alt="Warwick Sport" src="http://theboar.org/wp-content/uploads/2018/10/Sport-webanner.png">
+          </a>
+          <a class="sponsor showing" href="https://www.capgemini.com/gb-en/corporate-responsibility/our-corporate-responsibility-sustainability-approach/community-engagement/" target="_blank">
+            <img alt="Capgemini" src="http://theboar.org/wp-content/uploads/2018/10/Home-Page-Banner-W1370px-x-H250px.jpg">
+          </a>
+        </div>
+      </div>
+
+      <?php
       $query = new WP_Query(array('cat' => '2,4', 'posts_per_page' => 6));
 
       if ( $query->have_posts() ) {
