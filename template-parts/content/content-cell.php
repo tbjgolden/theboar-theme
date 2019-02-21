@@ -20,8 +20,7 @@ $classes = join(' ', array_filter(get_post_class(), function ($class_name) {
 })) . ' cell';
 
 $post_cats = wp_get_post_categories(get_the_ID());
-echo $post_cats;
-
+var_dump($post_cats);
 // foreach ($post_cats as $cat) {
 //   if ($cat < 15) {
 //     $classes .= ' cell-cat-' . $cat;
