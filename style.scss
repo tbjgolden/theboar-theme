@@ -497,8 +497,9 @@ body.single-post {
   }
 }
 
-.sponsors {
+.cell.sponsors {
   grid-column: 1 / -1;
+  background-color: transparent;
 
   .sponsor {
     display: block;
