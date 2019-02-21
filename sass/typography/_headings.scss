@@ -2,6 +2,7 @@
 .comment-metadata,
 .comment-reply-link,
 .comments-title,
+.crp_related_title,
 .comment-author .fn,
 .discussion-meta-info,
 .entry-meta,
@@ -37,6 +38,7 @@ h6 {
 .post-navigation .post-title,
 .pagination .nav-links,
 .comments-title,
+.crp_related_title,
 .comment-author .fn,
 .no-comments,
 .site-title,
@@ -88,6 +90,7 @@ h2 {
 .has-regular-font-size,
 .has-large-font-size,
 .comments-title,
+.crp_related_title,
 h3 {
   font-size: $font__size-lg;
 }
@@ -141,6 +144,7 @@ h6 {
 .not-found .page-title,
 .error-404 .page-title,
 .comments-title,
+.crp_related_title,
 blockquote {
   hyphens: auto;
   word-break: break-word;
