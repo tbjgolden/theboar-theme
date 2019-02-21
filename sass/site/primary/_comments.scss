@@ -6,7 +6,8 @@
   display: block;
 }
 
-.comments-area {
+.comments-area,
+.crp_related_title {
   margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit;
   @include postContentMaxWidth();
 
