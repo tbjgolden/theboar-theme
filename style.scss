@@ -456,6 +456,10 @@ body.single-post {
   padding: 0;
   margin-right: -#{$size__spacing-unit / 2};
 
+  a {
+    display: inline-block;
+  }
+
   .crp_related_item {
     flex: 1 0 auto;
     width: 228px;
@@ -464,6 +468,8 @@ body.single-post {
   }
 
   .crp_thumb {
+    display: block;
+    width: 100%;
     height: 140px;
     object-fit: cover;
     object-position: 50% 20%;
