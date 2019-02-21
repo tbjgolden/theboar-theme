@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const { exec } = require('child_process');
+
+if (process.argv.length < 4) {
+  console.log('No filename or command passed');
+  process.exit(1);
+}
+
+const basicEscape = `"${process.argv[2].replace(/"/g, '\\"')}"`;
+const command = process.argv[3];
+
+exec(`git diff -s --exit-code ${basicEscape}`, err => {
+  if (err) {
+    console.log(basicEscape + ' changed.');
+    console.log('$ ' + command);
+    exec(command);
+  } else {
+    console.log(basicEscape + ' unchanged.');
+  }
+});
