@@ -505,6 +505,12 @@ body.single-post {
     display: block;
     width: 100%;
 
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     &:not(:first-child) {
       margin-top: #{$size__spacing-unit / 2};
     }
