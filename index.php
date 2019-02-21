@@ -18,7 +18,7 @@ get_header();
 ?>
 
   <section id="primary" class="content-area">
-    <main id="main" class="site-main cells">
+    <main id="main" class="site-main cells hi">
       <?php
       $query = new WP_Query(array('cat' => '34573', 'posts_per_page' => 4));
 
