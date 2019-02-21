@@ -498,5 +498,14 @@ body.single-post {
 }
 
 .sponsors {
-  
+  grid-column: auto / -1;
+
+  .sponsor {
+    display: block;
+    width: 100%;
+
+    &:not(:first-child) {
+      margin-top: #{$size__spacing-unit / 2};
+    }
+  }
 }
