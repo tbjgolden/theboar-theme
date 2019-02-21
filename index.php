@@ -34,15 +34,13 @@ get_header();
       }
       ?>
 
-      <div class="row sponsors">
-        <div class="sponsors-slider">
-          <a class="sponsor showing" href="https://warwick.ac.uk/services/sport/join/?utm_source=theboar.org&utm_medium=banner&fbclid=IwAR2X6Nfg9Yoz-w88MiBLJpOdJLDuk0bxCC3TTjzlL6UTsxok9JP0skjtgGQ" target="_blank">
-            <img alt="Warwick Sport" src="http://theboar.org/wp-content/uploads/2018/10/Sport-webanner.png">
-          </a>
-          <a class="sponsor showing" href="https://www.capgemini.com/gb-en/corporate-responsibility/our-corporate-responsibility-sustainability-approach/community-engagement/" target="_blank">
-            <img alt="Capgemini" src="http://theboar.org/wp-content/uploads/2018/10/Home-Page-Banner-W1370px-x-H250px.jpg">
-          </a>
-        </div>
+      <div class="cell sponsors">
+        <a class="sponsor" href="https://warwick.ac.uk/services/sport/join/?utm_source=theboar.org&utm_medium=banner&fbclid=IwAR2X6Nfg9Yoz-w88MiBLJpOdJLDuk0bxCC3TTjzlL6UTsxok9JP0skjtgGQ" target="_blank">
+          <img alt="Warwick Sport" src="/wp-content/uploads/2018/10/Sport-webanner.png">
+        </a>
+        <a class="sponsor" href="https://www.capgemini.com/gb-en/corporate-responsibility/our-corporate-responsibility-sustainability-approach/community-engagement/" target="_blank">
+          <img alt="Capgemini" src="/wp-content/uploads/2018/10/Home-Page-Banner-W1370px-x-H250px.jpg">
+        </a>
       </div>
 
       <?php
