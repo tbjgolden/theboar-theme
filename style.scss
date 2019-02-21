@@ -251,8 +251,7 @@ $categories: (
   );
   grid-gap: 0.5 * $size__site-margins;
   grid-auto-flow: row dense;
-  padding-left: $size__site-margins;
-  padding-right: $size__site-margins;
+  padding: 4px $size__site-margins;
 
   @media (max-width: 400px) {
     grid-gap: 0;
