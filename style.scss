@@ -231,9 +231,9 @@ $categories: (
   }
 
   .cell.cell-cat-#{$cat-id} {
-    &:hover,
-    &:active,
-    &:focus {
+    .cell-link:hover,
+    .cell-link:active,
+    .cell-link:focus {
       outline: 4px solid $color;
     }
 
