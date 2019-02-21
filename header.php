@@ -1,23 +1,6 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
-$GLOBALS['CATEGORIES'] = array(
-  "1" => array("News",           "news",         ""),
-  "2" => array("Comment",        "comment",      ""),
-  "3" => array("Money",          "money",        ""),
-  "4" => array("Features",       "features",     ""),
-  "5" => array("Science & Tech", "science-tech", ""),
-  "6" => array("Music",          "music",        ""),
-  "7" => array("Games",          "games",        ""),
-  "8" => array("TV",             "tv",           ""),
-  "9" => array("Film",           "film",         ""),
-  "10" => array("Books",         "books",        ""),
-  "11" => array("Arts",          "arts",         ""),
-  "12" => array("Lifestyle",     "lifestyle",    ""),
-  "13" => array("Travel",        "travel",       ""),
-  "14" => array("Sport",         "sport",        "")
-);
 ?><!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
