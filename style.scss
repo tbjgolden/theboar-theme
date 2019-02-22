@@ -534,11 +534,12 @@ body.single-post {
 
   svg {
     transform: translate3d(-50%, 0, 0);
+    transition: transform .2s ease-in-out;
   }
 
   &:hover, &:focus, &:active {
     svg {
-      transform: translate3d(-20%, 0, 0);
+      transform: translate3d(-30%, 0, 0);
     }
   }
 }
