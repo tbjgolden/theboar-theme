@@ -530,16 +530,10 @@ body.single-post {
   font-size: 192px;
   color: rgba(127, 127, 127, .7);
   left: 0;
-  overflow: hidden;
-
-  svg {
-    transform: translate3d(-50%, 0, 0);
-    transition: transform .2s ease-in-out;
-  }
+  transform: translate3d(-50%, 0, 0);
+  transition: transform .25s ease-in-out;
 
   &:hover, &:focus, &:active {
-    svg {
-      transform: translate3d(-30%, 0, 0);
-    }
+    transform: translate3d(-30%, 0, 0);
   }
 }
