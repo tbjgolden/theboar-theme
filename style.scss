@@ -223,6 +223,7 @@ $categories: (
 
   #site-navigation a[href*='/category/#{$name}/'] {
     color: $color;
+    background-color: transparent !important;
 
     &:hover,
     &:active,
