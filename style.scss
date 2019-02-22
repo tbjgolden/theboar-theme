@@ -527,13 +527,19 @@ body.single-post {
   position: absolute;
   display: inline-block;
   top: 0;
-  font-size: 192px;
-  height: 192px;
-  width: 192px;
   color: rgba(127, 127, 127, .7);
   left: 0;
   transform: translate3d(-50%, 0, 0);
   transition: transform .25s ease-in-out;
+  
+  font-size: 128px;
+  height: 128px;
+  width: 128px;
+  @include media(tablet) {
+    font-size: 192px;
+    height: 192px;
+    width: 192px;
+  }
 
   &:hover, &:focus, &:active {
     transform: translate3d(-30%, 0, 0);
@@ -541,9 +547,9 @@ body.single-post {
 }
 
 .site-title-text {
-  font-size: 250%;
+  font-size: 220%;
   color: rgb(127, 127, 127);
   position: relative;
   top: 72px;
-  left: 72px;
+  left: 96px;
 }
