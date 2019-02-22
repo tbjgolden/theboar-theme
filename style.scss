@@ -522,3 +522,16 @@ body.single-post {
     }
   }
 }
+
+#boar-logo {
+  position: fixed;
+  display: inline-block;
+  top: 48px;
+  font-size: 128px;
+  left: 0;
+  overflow: hidden;
+
+  > svg {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
