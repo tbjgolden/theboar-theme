@@ -30,6 +30,7 @@
 .site-branding {
   color: $color__text-light;
   position: relative;
+  margin: 0;
 
   @include media(tablet) {
     padding: 0 $size__site-margins;
