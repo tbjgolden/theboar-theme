@@ -524,10 +524,11 @@ body.single-post {
 }
 
 #boar-logo {
-  position: fixed;
+  position: absolute;
   display: inline-block;
   top: 48px;
-  font-size: 128px;
+  font-size: 192px;
+  color: #ddd;
   left: 0;
   overflow: hidden;
 
