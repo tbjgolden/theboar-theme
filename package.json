@@ -36,6 +36,7 @@
   "scripts": {
     "build:style": "./changed style.scss \"node-sass style.scss style.css --output-style compressed --source-map true && rtlcss style.css style-rtl.css && postcss -r style.css && postcss -r style-rtl.css\"",
     "build:style-editor": "./changed style-editor.scss \"node-sass style-editor.scss style-editor.css --output-style compressed && postcss -r style-editor.css\"",
+    "build:style-editor-customizer": "./changed style-editor-customizer.scss \"node-sass style-editor-customizer.scss style-editor-customizer.css --output-style compressed && postcss -r style-editor-customizer.css\"",
     "build:print": "./changed print.scss \"node-sass print.scss print.css --output-style compressed && postcss -r print.css\"",
     "build": "run-p -cs \"build:*\"",
     "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial"
