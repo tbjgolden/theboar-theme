@@ -223,11 +223,6 @@ $categories: (
 );
 // prettier-ignore-end
 
-@media (max-width: 400px) {
-  #site-navigation a[href*='/category/#{$name}/'] {
-    margin-top: 0;
-}
-
 @each $name, $data in $categories {
   $cat-id: nth($data, 1);
   $color: nth($data, 2);
@@ -236,7 +231,6 @@ $categories: (
   #site-navigation a[href*='/category/#{$name}/'] {
     color: $color;
     background-color: transparent !important;
-
 
     &:hover,
     &:active,
@@ -249,17 +243,17 @@ $categories: (
     opacity: 1 !important;
   }
 
-  // .cell.cell-cat-#{$cat-id} {
-  //   .cell-link:hover,
-  //   .cell-link:active,
-  //   .cell-link:focus {
-  //     outline: 4px solid $color;
-  //   }
-  // 
-  //   .cell-header::before {
-  //     background-color: $color !important;
-  //   }
-  // }
+  .cell.cell-cat-#{$cat-id} {
+    .cell-link:hover,
+    .cell-link:active,
+    .cell-link:focus {
+      outline: 4px solid $color;
+    }
+
+    .cell-header::before {
+      background-color: $color !important;
+    }
+  }
 }
 
 .cells {
@@ -344,7 +338,6 @@ $categories: (
     bottom: 0;
     width: 100%;
     padding: 0.5rem;
-    color: #fff !important;
 
     &::before {
       content: '';
@@ -393,15 +386,6 @@ $categories: (
     height: 100%;
     display: block;
     color: #fff !important;
-
-    &:hover, &:focus, &:active {
-      outline: 4px solid;
-
-      @media (max-width: 400px) {
-        outline: 0;
-        opacity: 0.9;
-      }
-    }
   }
 
   .cell-content {
@@ -542,10 +526,6 @@ body.single-post {
 
     &:not(:first-child) {
       margin-top: #{$size__spacing-unit / 2};
-
-      @media (max-width: 400px) {
-        margin-top: 0;
-      }
     }
   }
 }
@@ -600,3 +580,13 @@ body.single-post {
     padding-left: 108px;
   }
 }
+
+// #menu-category-menu {
+//   list-style: none;
+//   padding: 0;
+// 
+//   .menu-item {
+//     display: inline-block;
+//     margin: 0 8px 8px 0;
+//   }
+// }
