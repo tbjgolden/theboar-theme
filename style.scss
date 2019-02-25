@@ -527,15 +527,14 @@ body.single-post {
   position: absolute;
   display: inline-block;
   top: 0;
-  color: rgba(127, 127, 127);
-  opacity: 0.7;
+  color: rgba(127, 127, 127, .7);
   left: 0;
   transform: translate3d(-50%, 0, 0);
-  transition: transform .25s ease-in-out, opacity .25s ease-in-out;
+  transition: transform .25s ease-in-out;
+  
   font-size: 128px;
   height: 128px;
   width: 128px;
-
   @include media(tablet) {
     font-size: 192px;
     height: 192px;
@@ -544,7 +543,6 @@ body.single-post {
 
   &:hover, &:focus, &:active {
     transform: translate3d(-30%, 0, 0);
-    opacity: 1;
   }
 }
 
