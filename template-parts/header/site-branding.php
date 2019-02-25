@@ -51,12 +51,10 @@
 
   if ( has_nav_menu( 'menu-1' ) ) {
     echo '<nav id="site-navigation" class="main-navigation';
-
     if (array_key_exists('CATEGORY', $GLOBALS)) {
       echo ' in-cat in-cat-' . $GLOBALS['CATEGORY']->term_id;
     }
-
-    echo '" aria-label="' . esc_attr_e( 'Top Menu', 'twentynineteen' ) . '">';
+    echo '" aria-label="Top Menu">';
 
     wp_nav_menu(
       array(
