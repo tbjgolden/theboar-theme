@@ -48,6 +48,18 @@ function twentynineteen_pingback_header() {
 add_action( 'wp_head', 'twentynineteen_pingback_header' );
 
 /**
+ * Add a pingback url auto-discovery header for single posts, pages, or attachments.
+ */
+function preload_fonts() {
+  ?>
+  <link rel="preload" href="https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVyvVp8NA.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/SourceSerifVariable-Roman.ttf.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/SourceSerifVariable-Italic.ttf.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <?php
+}
+add_action( 'wp_head', 'preload_fonts' );
+
+/**
  * Changes comment form default fields.
  */
 function twentynineteen_comment_form_defaults( $defaults ) {
