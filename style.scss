@@ -248,6 +248,18 @@ $categories: (
   #site-navigation.in-cat.in-cat-#{$cat-id} a[href*='/category/#{$name}/'] {
     opacity: 1 !important;
   }
+
+  // .cell.cell-cat-#{$cat-id} {
+  //   .cell-link:hover,
+  //   .cell-link:active,
+  //   .cell-link:focus {
+  //     outline: 4px solid $color;
+  //   }
+  // 
+  //   .cell-header::before {
+  //     background-color: $color !important;
+  //   }
+  // }
 }
 
 .cells {
