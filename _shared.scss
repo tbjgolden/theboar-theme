@@ -1,3 +1,7 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+
 @font-face {
   font-family: "PT Serif";
   font-style: normal;
@@ -31,4 +35,8 @@
   src: url("fonts/SourceSerifVariable-Italic.ttf.woff2") format("woff2"),
     url("fonts/SourceSerifVariable-Italic.ttf.woff") format("woff"),
     url("fonts/SourceSerifVariable-Italic.ttf") format("truetype");
+}
+
+html, body {
+  font-size: $font__size-base;
 }

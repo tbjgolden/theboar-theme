@@ -7,15 +7,7 @@ Description: The Boar 2019 Edition. Block editor friendly. Mobile friendly.
 Version: 1.0
 */
 
-@import "variables";
-@import "mixins";
-@import "normalize";
-
-/* Typography */
-
-html {
-  font-size: $font__size_base;
-}
+@import "shared";
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -23,7 +15,6 @@ body {
   color: $color__text-main;
   font-family: $font__body;
   font-weight: 400;
-  font-size: 1em;
   line-height: $font__line-height-body;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -107,7 +98,7 @@ h6 {
 .social-navigation,
 .author-description .author-bio,
 .nav-links {
-  line-height: 1.25;
+  line-height: $font__line-height-body;
 }
 
 h1 {
@@ -786,7 +777,7 @@ a {
 
       > .menu-item-link-return {
         width: 100%;
-        font-size: $font__size_base;
+        font-size: $font__size-md;
         font-weight: normal;
         text-align: left;
       }
@@ -1069,7 +1060,11 @@ a {
   text-align: left;
 
   ul.social-links-menu {
-    @include clearfix;
+    &::after {
+      content: "";
+      display: table;
+      table-layout: fixed;
+    }
 
     display: inline-block;
     margin: 0;
@@ -2062,7 +2057,7 @@ a {
 
   > small {
     display: block;
-    font-size: $font__size_base;
+    font-size: $font__size-md;
     position: absolute;
     left: calc(#{$size__spacing-unit} + 100%);
     top: calc(-3.5 * #{$size__spacing-unit});
@@ -2120,7 +2115,7 @@ a {
 
       a:not(.comment-edit-link) {
         font-weight: bold;
-        font-size: $font__size-base / (1 * $font__size-ratio);
+        font-size: $font__size-sm;
         line-height: 1.5;
         padding-right: #{0.5 * $size__spacing-unit};
         display: block;
@@ -2311,10 +2306,14 @@ a {
 }
 
 .discussion-avatar-list {
-  @include clearfix;
-
   margin: 0;
   padding: 0;
+
+  &::after {
+    content: "";
+    display: table;
+    table-layout: fixed;
+  }
 
   li {
     position: relative;
@@ -2523,7 +2522,7 @@ a {
       color: $color__text-light;
       font-family: $font__heading;
       font-weight: bold !important;
-      font-size: calc(#{$font__size_base} * #{$font__size-ratio});
+      font-size: $font__size-md;
       font-weight: 700;
       line-height: $font__line-height-heading;
       margin-top: #{0.5 * $size__spacing-unit};
@@ -2798,7 +2797,7 @@ a {
     li {
       color: $color__text-light;
       font-family: $font__heading;
-      font-size: calc(#{$font__size_base} * #{$font__size-ratio});
+      font-size: $font__size-md;
       font-weight: bold !important;
       line-height: $font__line-height-heading;
       padding-bottom: (0.75 * $size__spacing-unit);
@@ -2865,7 +2864,7 @@ a {
   //! Verse
   .wp-block-verse {
     font-family: $font__body;
-    font-size: $font__size_base;
+    font-size: $font__size-md;
     line-height: 1.8;
   }
 
@@ -2918,12 +2917,7 @@ a {
       line-height: 1.6;
       text-transform: none;
       color: $color__text-light;
-
-      /*
-       * This requires a rem-based font size calculation instead of our normal em-based one,
-       * because the cite tag sometimes gets wrapped in a p tag. This is equivalent to $font-size_xs.
-       */
-      font-size: calc(1rem / (1.25 * #{$font__size-ratio}));
+      font-size: $font__size-xs;
     }
 
     &.alignleft,
@@ -3027,11 +3021,7 @@ a {
     }
 
     cite {
-      /*
-       * This requires a rem-based font size calculation instead of our normal em-based one,
-       * because the cite tag sometimes gets wrapped in a p tag. This is equivalent to $font-size_xs.
-       */
-      font-size: calc(1rem / (1.25 * #{$font__size-ratio}));
+      font-size: $font__size-xs;
     }
 
     &.is-large,
@@ -3048,11 +3038,7 @@ a {
 
       cite,
       footer {
-        /*
-         * This requires a rem-based font size calculation instead of our normal em-based one,
-         * because the cite tag sometimes gets wrapped in a p tag. This is equivalent to $font-size_xs.
-         */
-        font-size: calc(1rem / (1.25 * #{$font__size-ratio}));
+        font-size: $font__size-xs;
       }
 
       @include media(tablet) {
