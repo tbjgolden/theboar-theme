@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     while (curr.length === 1 && curr.parentNode.textContent.length === 1) {
       var parent = curr.parentNode.parentNode;
       parent.removeChild(parent.firstChild);
-      parent.insertBefore(x, parent.firstChild);
+      parent.insertBefore(curr, parent.firstChild);
     }
   });
 });
