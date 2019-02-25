@@ -563,16 +563,6 @@ body.single-post {
   }
 }
 
-#site-navigation {
-  position: absolute;
-  top: -1rem;
-  padding: 0;
-  padding-left: 86px;
-
-  @include media(tablet) {
-    padding-left: 108px;
-  }
-}
 // #menu-category-menu {
 //   list-style: none;
 //   padding: 0;
