@@ -7,4 +7,5 @@
       parent.insertBefore(x, parent.firstChild);
     }
   });
+  console.log('Hi');
 })();
