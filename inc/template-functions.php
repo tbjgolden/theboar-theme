@@ -48,6 +48,16 @@ function twentynineteen_pingback_header() {
 add_action( 'wp_head', 'twentynineteen_pingback_header' );
 
 /**
+ * Add font preloads.
+ */
+function font_preloads() {
+  echo '<link rel="preload" href="https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVyvVp8NA.woff2" as="font" type="font/woff2" crossorigin="anonymous" />';
+  echo '<link rel="preload" href="' . get_template_directory_uri() . '/fonts/SourceSerifVariable-Roman.ttf.woff2" as="font" type="font/woff2" crossorigin="anonymous" />';
+  echo '<link rel="preload" href="' . get_template_directory_uri() . '/fonts/SourceSerifVariable-Italic.ttf.woff2" as="font" type="font/woff2" crossorigin="anonymous" />';
+}
+add_action( 'wp_head', 'font_preloads' );
+
+/**
  * Changes comment form default fields.
  */
 function twentynineteen_comment_form_defaults( $defaults ) {

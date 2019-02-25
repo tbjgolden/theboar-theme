@@ -7,9 +7,6 @@ ini_set('display_errors', 1);
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="profile" href="https://gmpg.org/xfn/11" />
-  <link rel="preload" href="https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVyvVp8NA.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="/wp-content/themes/newboar/fonts/SourceSerifVariable-Roman.ttf.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-  <link rel="preload" href="/wp-content/themes/newboar/fonts/SourceSerifVariable-Italic.ttf.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
   <?php wp_head(); ?>
 </head>
 
