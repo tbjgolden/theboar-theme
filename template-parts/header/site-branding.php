@@ -56,7 +56,7 @@
       echo ' in-cat in-cat-' . $GLOBALS['CATEGORY']->term_id;
     }
 
-    echo '" aria-label="Top Menu">';
+    echo '" aria-label="' . esc_attr_e( 'Top Menu', 'twentynineteen' ) . '">';
 
     wp_nav_menu(
       array(
