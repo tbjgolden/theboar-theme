@@ -212,10 +212,6 @@ function twentynineteen_scripts() {
 
   wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
 
-  if ( has_nav_menu( 'menu-1' ) ) {
-    wp_enqueue_script( 'twentynineteen-touch-navigation', get_theme_file_uri( '/js/touch-keyboard-navigation.js' ), array(), '1.1', true );
-  }
-
   wp_enqueue_style( 'twentynineteen-print-style', get_template_directory_uri() . '/print.css', array(), wp_get_theme()->get( 'Version' ), 'print' );
 
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -252,12 +248,12 @@ add_filter( 'excerpt_more', function ($more) { return '...'; } );
 /**
  * SVG Icons class.
  */
-require get_template_directory() . '/classes/class-twentynineteen-svg-icons.php';
+require get_template_directory() . '/classes/svg-icons.php';
 
 /**
  * Custom Comment Walker template.
  */
-require get_template_directory() . '/classes/class-twentynineteen-walker-comment.php';
+require get_template_directory() . '/classes/walker-comment.php';
 
 /**
  * Enhance the theme by hooking into WordPress.

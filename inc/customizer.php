@@ -29,6 +29,6 @@ function twentynineteen_customize_partial_blogdescription() {
  * Load dynamic logic for the customizer controls area.
  */
 function twentynineteen_panels_js() {
-  wp_enqueue_script( 'twentynineteen-customize-controls', get_theme_file_uri( '/js/customize-controls.js' ), array(), '20181231', true );
+  wp_enqueue_script( 'twentynineteen-customize-controls', get_theme_file_uri( '/customizer.js' ), array(), '20181231', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'twentynineteen_panels_js' );
