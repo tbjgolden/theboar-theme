@@ -547,16 +547,9 @@ body.single-post {
 }
 
 .site-title-text {
-  font-size: 160%;
+  font-size: 220%;
   color: rgb(127, 127, 127);
   position: relative;
-
   top: 72px;
   left: 96px;
-
-  @include media(tablet) {
-    font-size: 220%;
-    top: 72px;
-    left: 96px;
-  }
 }
