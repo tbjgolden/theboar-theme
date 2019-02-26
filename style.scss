@@ -646,10 +646,11 @@ $icon-close: '%3C/svg%3E';
 
 .cell .cell-footer .cell-category-link {
   color: #fff;
-  margin-right: 4px;
-  padding: 0 3px;
+  margin-right: 2px;
+  padding: 0 2px;
   font-family: $font__heading;
   font-weight: 700 !important;
+
 }
 
 #site-navigation.in-cat a[href] {
@@ -688,25 +689,19 @@ $categories: (
   $icon: nth($data, 3);
 
   #site-navigation a[href*='/category/#{$name}/'] {
-    color: $color;
+    color: darken($color, 10%);
     background-color: transparent !important;
-
-    &:hover,
-    &:active,
-    &:focus {
-      outline: 4px solid $color;
-    }
   }
 
   #site-navigation.in-cat.in-cat-#{$cat-id} a[href*='/category/#{$name}/'] {
     opacity: 1 !important;
   }
 
-  .cell.cell-cat-#{$cat-id} {
-    .cell-header::before {
-      background-color: $color !important;
-    }
-  }
+  // .cell.cell-cat-#{$cat-id} {
+  //   .cell-header::before {
+  //     background-color: $color !important;
+  //   }
+  // }
 }
 
 .cells {
@@ -975,7 +970,7 @@ $categories: (
   font-weight: bold;
   font-family: $font__heading;
   color: rgb(127, 127, 127);
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 .tom-icon {
