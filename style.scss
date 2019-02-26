@@ -969,7 +969,10 @@ $categories: (
 }
 
 .todays-date {
-  
+  font-size: $font__size-sm;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(127, 127, 127);
 }
 
 .tom-icon {
