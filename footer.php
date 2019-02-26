@@ -18,8 +18,8 @@
   <footer id="colophon" class="site-footer">
     <?php get_template_part( 'template-parts/footer/footer', 'widgets' ); ?>
     <div class="site-info">
-      <a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        The<span hidden> </span><span style="color:#666">Boar</span>
+      <a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" style="text-transform:lowercase">
+        The<span style="display:none"> </span>Boar
       </a>
       <?php
       if ( function_exists( 'the_privacy_policy_link' ) ) {
