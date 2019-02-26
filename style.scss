@@ -22,6 +22,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+:focus {
+  outline: 1px dotted #000;
+}
+
 button,
 input,
 select,
@@ -410,6 +414,7 @@ li > ol {
 
 nav ul {
   padding-left: 0;
+  margin: 0;
   list-style: none;
 
   li {
@@ -959,6 +964,10 @@ $categories: (
   }
 }
 
+.site-title {
+  margin: .5rem 0 0;
+}
+
 .tom-icon {
   width: 1em;
   height: 1em;
@@ -968,6 +977,7 @@ $categories: (
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
 
 // global padding
 
