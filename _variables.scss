@@ -37,19 +37,13 @@ $color__border-input: $color__border;
 $color__border-abbr: #666;
 
 // Fonts
-$system__font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+$font__heading: "PT Serif", Georgia, "Times New Roman", Times, serif;
+$font__body: "Source Serif Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-
-$header__font: "PT Serif", Georgia, "Times New Roman", Times, serif;
-$body__font: "Source Serif Variable", $header__font;
-
-$font__body: $body__font;
-$font__heading: $header__font;
 $font__code: Menlo, monaco, Consolas, Lucida Console, monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 
 $font__size-base: 20px;
-
 $font__size-xs: 0.7rem;
 $font__size-sm: 0.9rem;
 $font__size-md: 1rem;
@@ -72,22 +66,6 @@ $mobile_width: 480px;
 $tablet_width: 768px;
 $desktop_width: 1168px;
 $wide_width: 1379px;
-
-$columns: (
-  1: calc(1 * (100vw / 12)),
-  2: calc(2 * (100vw / 12)),
-  3: calc(3 * (100vw / 12)),
-  4: calc(4 * (100vw / 12)),
-  5: calc(5 * (100vw / 12)),
-  6: calc(6 * (100vw / 12)),
-  7: calc(7 * (100vw / 12)),
-  8: calc(8 * (100vw / 12)),
-  9: calc(9 * (100vw / 12)),
-  10: calc(10 * (100vw / 12)),
-  11: calc(11 * (100vw / 12)),
-  12: calc(12 * (100vw / 12))
-);
-$columns__margin: $size__spacing-unit;
 
 $link_transition: 110ms;
 $icon_transition: 120ms;

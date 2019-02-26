@@ -382,7 +382,7 @@ hr {
 
 ul,
 ol {
-  padding-left: (1 * $size__spacing-unit);
+  padding-left: 1rem;
 }
 
 ul {
@@ -403,7 +403,7 @@ li {
 
 li > ul,
 li > ol {
-  padding-left: (2 * $size__spacing-unit);
+  padding-left: 2rem;
 }
 
 dt {
@@ -479,7 +479,7 @@ input[type="submit"] {
   font-weight: 700 !important;
   line-height: $font__line-height-heading;
   outline: none;
-  padding: ($size__spacing-unit * 0.6) $size__spacing-unit;
+  padding: .6rem $size__spacing-unit;
   text-decoration: none;
   vertical-align: bottom;
 
@@ -521,7 +521,7 @@ textarea {
   border: solid 1px $color__border;
   box-sizing: border-box;
   outline: none;
-  padding: ($size__spacing-unit * 0.6) $size__spacing-unit;
+  padding: .6rem $size__spacing-unit;
   -webkit-appearance: none;
   outline-offset: 0;
   border-radius: 0;
@@ -718,9 +718,9 @@ $categories: (
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(14 * $size__spacing-unit, 1fr)
+    minmax(14rem, 1fr)
   );
-  grid-gap: 0.5 * $size__spacing-unit;
+  grid-gap: .5rem;
   grid-auto-flow: row dense;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -882,7 +882,7 @@ $categories: (
     flex: 1 0 auto;
     width: 200px;
     max-width: 100%;
-    margin: 0 $size__spacing-unit #{1.5 * $size__spacing-unit} 0;
+    margin: 0 $size__spacing-unit 1.5rem 0;
   }
 
   .crp_thumb {
@@ -922,7 +922,7 @@ $categories: (
     }
 
     &:not(:first-child) {
-      margin-top: #{$size__spacing-unit / 2};
+      margin-top: .5rem;
     }
   }
 }
@@ -948,11 +948,9 @@ $categories: (
 
 .cells,
 footer {
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding: .5rem 1rem;
 
   @include media (mobile) {
-    padding-left: $size__spacing-unit;
-    padding-right: $size__spacing-unit;
+    padding: 1rem;
   }
 }
