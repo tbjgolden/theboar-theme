@@ -915,20 +915,29 @@ $categories: (
 
 #boar-logo {
   display: inline-block;
-  color: rgba(127, 127, 127, .7);
 
   position: absolute;
   top: ((128px - 96px) / 2);
   left: 0;
 
+
   font-size: 96px;
   height: 96px;
   width: 96px;
 
+  transition: color .25s ease-in-out;
+  color: rgba(127, 127, 127, .7);
+
   transform: translate3d(-50%, 0, 0);
 
+  &:hover,
+  &:focus,
+  &:active {
+    color: rgba($color__primary, .7);
+  }
+
   @include media(mobile) {
-    transition: transform .25s ease-in-out;
+    transition: color .25s ease-in-out, transform .25s ease-in-out;
 
     &:hover,
     &:focus,
