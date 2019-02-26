@@ -411,6 +411,10 @@ li > ol {
 nav ul {
   padding-left: 0;
   list-style: none;
+
+  li {
+    display: inline-block;
+  }
 }
 
 dt {
@@ -933,7 +937,7 @@ $categories: (
   &:hover,
   &:focus,
   &:active {
-    color: rgba($color__primary, .7);
+    color: $color__primary;
   }
 
   @include media(mobile) {
@@ -944,6 +948,14 @@ $categories: (
     &:active {
       transform: translate3d(-30%, 0, 0);
     }
+  }
+}
+
+.site-branding-container {
+  padding-left: 2rem;
+
+  @include media(mobile) {
+    padding-left: 2.5rem;
   }
 }
 
