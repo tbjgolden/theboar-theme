@@ -29,9 +29,7 @@
 
   if ( ( is_front_page() && is_home() ) || is_category() ) {
     echo '<div class="todays-date">' . esc_html( date_i18n( get_option( 'date_format' ), time() ) ) . '</div>';
-  }
 
-  if ( is_front_page() && is_home() ) {
     echo '
     <h1 class="site-title">
       <svg xmlns="http://www.w3.org/2000/svg" width="3.571em" height="1em" fill-rule="nonzero" viewBox="1850 0 6142 1720">

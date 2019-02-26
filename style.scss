@@ -691,10 +691,17 @@ $categories: (
   #site-navigation a[href*='/category/#{$name}/'] {
     color: darken($color, 10%);
     background-color: transparent !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color;
+    }
   }
 
   #site-navigation.in-cat.in-cat-#{$cat-id} a[href*='/category/#{$name}/'] {
     opacity: 1 !important;
+    text-decoration: underline;
   }
 
   // .cell.cell-cat-#{$cat-id} {
