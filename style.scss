@@ -1011,8 +1011,10 @@ $categories: (
   }
 
   header {
+    position: relative;
     height: calc(100vh - 100px);
     overflow: hidden;
+    z-index: 11;
   }
 }
 
