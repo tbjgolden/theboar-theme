@@ -366,7 +366,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  margin: $size__spacing-unit 0;
+  margin: 1rem 0;
 }
 
 h1:not(.site-title),
@@ -411,7 +411,7 @@ dt {
 }
 
 dd {
-  margin: 0 $size__spacing-unit $size__spacing-unit;
+  margin: 0 1rem 1rem;
 }
 
 img {
@@ -427,11 +427,11 @@ figure {
 blockquote {
   border-left: 2px solid $color__link;
   margin-left: 0;
-  padding: 0 0 0 $size__spacing-unit;
+  padding: 0 0 0 1rem;
   font-weight: bold;
 
   > p {
-    margin: 0 0 $size__spacing-unit;
+    margin: 0 0 1rem;
 
     > strong:first-child:last-child {
       font-weight: inherit;
@@ -448,7 +448,7 @@ blockquote {
 }
 
 table {
-  margin: 0 0 $size__spacing-unit;
+  margin: 0 0 1rem;
   border-collapse: collapse;
   width: 100%;
   font-family: $font__heading;
@@ -479,7 +479,7 @@ input[type="submit"] {
   font-weight: 700 !important;
   line-height: $font__line-height-heading;
   outline: none;
-  padding: .6rem $size__spacing-unit;
+  padding: .6rem 1rem;
   text-decoration: none;
   vertical-align: bottom;
 
@@ -521,7 +521,7 @@ textarea {
   border: solid 1px $color__border;
   box-sizing: border-box;
   outline: none;
-  padding: .6rem $size__spacing-unit;
+  padding: .6rem 1rem;
   -webkit-appearance: none;
   outline-offset: 0;
   border-radius: 0;
@@ -552,7 +552,7 @@ textarea {
 
 form {
   p {
-    margin: $size__spacing-unit 0;
+    margin: 1rem 0;
   }
 }
 
@@ -872,7 +872,7 @@ $categories: (
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin-right: -$size__spacing-unit;
+  margin-right: -1rem;
 
   a {
     display: inline-block;
@@ -882,7 +882,7 @@ $categories: (
     flex: 1 0 auto;
     width: 200px;
     max-width: 100%;
-    margin: 0 $size__spacing-unit 1.5rem 0;
+    margin: 0 1rem 1.5rem 0;
   }
 
   .crp_thumb {
