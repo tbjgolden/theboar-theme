@@ -15,9 +15,9 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
     $timestamp = get_the_time( 'U' );
     $modified_timestamp = get_the_modified_time( 'U' );
 
-    $time_string = 'Published on: <time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+    $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
     if ( $timestamp !== $modified_timestamp ) {
-      $time_string = 'Published on: <time class="entry-date published" datetime="%1$s">%2$s</time> (Last updated on: <time class="updated" datetime="%3$s">%4$s</time>)';
+      $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><small> (Last updated: <time class="updated" datetime="%3$s">%4$s</time>)</small>';
     }
 
     $time_string = sprintf(
