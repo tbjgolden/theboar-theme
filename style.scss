@@ -987,6 +987,7 @@ $categories: (
 @supports (object-fit: cover) {
   .site-featured-image {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     height: calc(100vh - 100px);
