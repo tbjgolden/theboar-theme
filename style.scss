@@ -160,7 +160,7 @@ h5 {
 #cancel-comment-reply-link,
 img:after,
 h6 {
-  font-size: $font__size-xs;
+  font-size: $font__size-sm;
 }
 
 .site-title,
@@ -204,7 +204,7 @@ i {
 
 blockquote {
   cite {
-    font-size: $font__size-xs;
+    font-size: $font__size-sm;
     font-style: normal;
     font-family: $font__heading;
     font-weight: bold !important;
@@ -268,7 +268,7 @@ i {
 
 blockquote {
   cite {
-    font-size: $font__size-xs;
+    font-size: $font__size-sm;
     font-style: normal;
     font-family: $font__heading;
     font-weight: bold !important;
@@ -947,4 +947,7 @@ footer,
   @include media (mobile) {
     padding: 1rem;
   }
+}
+
+footer {
 }
