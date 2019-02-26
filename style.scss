@@ -728,9 +728,9 @@ $categories: (
   grid-auto-flow: row dense;
   padding: 4px $size__spacing-unit;
 
-  @media (max-width: 400px) {
-    padding-left: 0;
-    padding-right: 0;
+  @media (max-width: 480px) {
+    padding-left: $size__spacing-unit / 2;
+    padding-right: $size__spacing-unit / 2;
   }
 
   .cell {
