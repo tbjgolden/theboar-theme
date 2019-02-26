@@ -26,9 +26,11 @@
         ) .
       '</nav><!-- #top-navigation -->';
   }
-  ?>
-  
-  <?php
+
+  if ( ( is_front_page() && is_home() ) || is_category() ) {
+    echo esc_html( date_i18n( get_option( 'date_format' ), time() ) );
+  }
+
   if ( is_front_page() && is_home() ) {
     echo '
     <h1 class="site-title">
