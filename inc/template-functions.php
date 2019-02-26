@@ -210,11 +210,11 @@ function twentynineteen_add_dropdown_icons( $output, $item, $depth, $args ) {
   }
 
   if ( in_array( 'mobile-parent-nav-menu-item', $item->classes, true ) && isset( $item->original_id ) ) {
-    // Inject the keyboard_arrow_left SVG inside the parent nav menu item, and let the item link to the parent item.
+    // Inject the chevron_left SVG inside the parent nav menu item, and let the item link to the parent item.
     // @todo Only do this for nested submenus? If on a first-level submenu, then really the link could be "#" since the desire is to remove the target entirely.
     $link = sprintf(
       '<button class="menu-item-link-return" tabindex="-1">%s',
-      twentynineteen_get_icon_svg( 'chevron_left', 24 )
+      twentynineteen_get_icon_svg( 'chevron-left', 24 )
     );
 
     // replace opening <a> with <button>
@@ -236,7 +236,7 @@ function twentynineteen_add_dropdown_icons( $output, $item, $depth, $args ) {
   } elseif ( in_array( 'menu-item-has-children', $item->classes, true ) ) {
 
     // Add SVG icon to parent items.
-    $icon = twentynineteen_get_icon_svg( 'keyboard_arrow_down', 24 );
+    $icon = twentynineteen_get_icon_svg( 'chevron-down', 24 );
 
     $output .= sprintf(
       '<button class="submenu-expand" tabindex="-1">%s</button>',

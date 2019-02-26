@@ -30,7 +30,7 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
 
     printf(
       '<div class="posted-on">%1$s%2$s</div>',
-      twentynineteen_get_icon_svg( 'watch', 16 ),
+      twentynineteen_get_icon_svg( 'clock', 16 ),
       $time_string
     );
   }
@@ -44,7 +44,7 @@ if ( ! function_exists( 'twentynineteen_posted_by' ) ) :
     printf(
       /* translators: 1: SVG icon. 2: post author, only visible to screen readers. 3: author link. */
       '<div class="byline">%1$s<span class="screen-reader-text">%2$s</span><span class="author vcard"><a class="url fn n" href="%3$s">%4$s</a></span></div>',
-      twentynineteen_get_icon_svg( 'person', 16 ),
+      twentynineteen_get_icon_svg( 'user', 16 ),
       __( 'Posted by', 'twentynineteen' ),
       esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
       esc_html( get_the_author() )
@@ -222,13 +222,13 @@ if ( ! function_exists( 'twentynineteen_the_posts_navigation' ) ) :
         'mid_size'  => 2,
         'prev_text' => sprintf(
           '%s <span class="nav-prev-text">%s</span>',
-          twentynineteen_get_icon_svg( 'chevron_left', 22 ),
+          twentynineteen_get_icon_svg( 'chevron-left', 22 ),
           __( 'Newer posts', 'twentynineteen' )
         ),
         'next_text' => sprintf(
           '<span class="nav-next-text">%s</span> %s',
           __( 'Older posts', 'twentynineteen' ),
-          twentynineteen_get_icon_svg( 'chevron_right', 22 )
+          twentynineteen_get_icon_svg( 'chevron-right', 22 )
         ),
       )
     );

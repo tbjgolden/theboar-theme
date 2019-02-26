@@ -87,8 +87,8 @@ $discussion = twentynineteen_get_discussion_data();
 
     // Show comment navigation
     if ( have_comments() ) :
-      $prev_icon     = twentynineteen_get_icon_svg( 'chevron_left', 22 );
-      $next_icon     = twentynineteen_get_icon_svg( 'chevron_right', 22 );
+      $prev_icon     = twentynineteen_get_icon_svg( 'chevron-left', 22 );
+      $next_icon     = twentynineteen_get_icon_svg( 'chevron-right', 22 );
       $comments_text = __( 'Comments', 'twentynineteen' );
       the_comments_navigation(
         array(
