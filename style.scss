@@ -726,11 +726,10 @@ $categories: (
   );
   grid-gap: 0.5 * $size__spacing-unit;
   grid-auto-flow: row dense;
-  padding: 4px $size__spacing-unit;
+  padding: 4px ($size__spacing-unit / 2);
 
-  @media (max-width: 480px) {
-    padding-left: $size__spacing-unit / 2;
-    padding-right: $size__spacing-unit / 2;
+  @include media (mobile) {
+    padding: 4px $size__spacing-unit;
   }
 
   .cell {
