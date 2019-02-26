@@ -990,6 +990,7 @@ $categories: (
     z-index: -1;
     top: 0;
     left: 0;
+    width: 100%;
     height: calc(100vh - 100px);
 
     figure {
@@ -998,6 +999,7 @@ $categories: (
       left: 0;
       width: 100%;
       height: 100%;
+      background-color: #000;
     }
 
     img {
@@ -1008,6 +1010,7 @@ $categories: (
       height: 100%;
       object-fit: cover;
       object-position: 50% 20%;
+      opacity: 0.8;
     }
   }
 
