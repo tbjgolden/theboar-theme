@@ -712,12 +712,6 @@ $categories: (
   }
 
   .cell.cell-cat-#{$cat-id} {
-    .cell-link:hover,
-    .cell-link:active,
-    .cell-link:focus {
-      outline: 4px solid $color;
-    }
-
     .cell-header::before {
       background-color: $color !important;
     }
@@ -735,7 +729,6 @@ $categories: (
   padding: 4px $size__spacing-unit;
 
   @media (max-width: 400px) {
-    grid-gap: 0;
     padding-left: 0;
     padding-right: 0;
   }
