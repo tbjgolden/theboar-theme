@@ -416,6 +416,7 @@ dd {
 
 img {
   height: auto;
+  width: 100%;
   max-width: 100%;
   position: relative;
 }
@@ -947,6 +948,7 @@ $categories: (
 // global padding
 
 header,
+main,
 footer,
 .cells {
   padding: 1rem .5rem;
