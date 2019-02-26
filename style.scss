@@ -925,7 +925,7 @@ $categories: (
   height: 96px;
   width: 96px;
 
-  transition: color .25s ease-in-out;
+  transition: color .15s ease-in-out;
   color: rgba(127, 127, 127, .7);
 
   transform: translate3d(-50%, 0, 0);
@@ -937,7 +937,7 @@ $categories: (
   }
 
   @include media(mobile) {
-    transition: color .25s ease-in-out, transform .25s ease-in-out;
+    transition: color .15s ease-in-out, transform .25s ease-in-out;
 
     &:hover,
     &:focus,
