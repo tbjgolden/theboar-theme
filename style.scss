@@ -946,8 +946,9 @@ $categories: (
 
 // global padding
 
-.cells,
-footer {
+header,
+footer,
+.cells {
   padding: 1rem .5rem;
 
   @include media (mobile) {
