@@ -483,7 +483,7 @@ input[type="submit"] {
   font-weight: 700 !important;
   line-height: $font__line-height-heading;
   outline: none;
-  padding: ($size__spacing-unit * 0.76) $size__spacing-unit;
+  padding: ($size__spacing-unit * 0.6) $size__spacing-unit;
   text-decoration: none;
   vertical-align: bottom;
 
@@ -525,7 +525,7 @@ textarea {
   border: solid 1px $color__border;
   box-sizing: border-box;
   outline: none;
-  padding: #{0.36 * $size__spacing-unit} #{0.66 * $size__spacing-unit};
+  padding: ($size__spacing-unit * 0.6) $size__spacing-unit;
   -webkit-appearance: none;
   outline-offset: 0;
   border-radius: 0;
@@ -693,11 +693,11 @@ $categories: (
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(#{320px - (2 * $size__site-margins)}, 1fr)
+    minmax(14 * $size__spacing-unit, 1fr)
   );
-  grid-gap: 0.5 * $size__site-margins;
+  grid-gap: 0.5 * $size__spacing-unit;
   grid-auto-flow: row dense;
-  padding: 4px $size__site-margins;
+  padding: 4px $size__spacing-unit;
 
   @media (max-width: 400px) {
     grid-gap: 0;
@@ -844,62 +844,6 @@ $categories: (
       height: 1em;
       vertical-align: -0.5ex;
     }
-  }
-}
-
-body.single-post {
-  .entry-header {
-    .entry-title,
-    .entry-meta {
-      @include media(tablet) {
-        padding-left: 10%;
-        padding-right: 10%;
-      }
-    }
-  }
-
-  .entry-content {
-    @include media(tablet) {
-      padding-left: 10%;
-      padding-right: 10%;
-    }
-  }
-
-  .entry-footer,
-  .post-navigation,
-  .comments-area {
-    max-width: none;
-    @include media(tablet) {
-      padding-left: 10%;
-      padding-right: 10%;
-      max-width: calc(66.66667vw - 28px);
-    }
-  }
-
-  #site-navigation a[href],
-  .site-title > a {
-    opacity: .5;
-
-    &:hover, &:active, &:focus {
-      opacity: 1;
-    }
-  }
-
-  .site-title > a {
-    &::before {
-      color: #ccc;
-    }
-    &::after {
-      color: #fff;
-    }
-  }
-}
-
-.crp_related_title {
-  margin: calc(2 * #{$size__spacing-unit}) 0;
-
-  @include media(tablet) {
-    margin: calc(3 * #{$size__spacing-unit}) 0;
   }
 }
 
