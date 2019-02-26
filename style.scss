@@ -981,7 +981,7 @@ $categories: (
 }
 
 #site-navigation a {
-  font-size: .7rem;
+  font-size: $font__size-sm;
   text-transform: uppercase;
   font-weight: bold;
   font-family: $font__heading;
