@@ -980,6 +980,13 @@ $categories: (
   padding: 0 2px;
 }
 
+#site-navigation a {
+  font-size: .7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: $font__heading;
+}
+
 .tom-icon {
   width: 1em;
   height: 1em;
