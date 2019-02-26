@@ -15,9 +15,9 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
     $timestamp = get_the_time( 'U' );
     $modified_timestamp = get_the_modified_time( 'U' );
 
-    $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+    $time_string = 'Published on: <time class="entry-date published updated" datetime="%1$s">%2$s</time>';
     if ( $timestamp !== $modified_timestamp ) {
-      $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+      $time_string = 'Published on: <time class="entry-date published" datetime="%1$s">%2$s</time> (Last updated on: <time class="updated" datetime="%3$s">%4$s</time>)';
     }
 
     $time_string = sprintf(
@@ -29,9 +29,8 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
     );
 
     printf(
-      '<span class="posted-on">%1$s<a href="%2$s" rel="bookmark">%3$s</a></span>',
+      '<span class="posted-on">%1$s%2$s</span>',
       twentynineteen_get_icon_svg( 'watch', 16 ),
-      esc_url( get_permalink() ),
       $time_string
     );
   }
