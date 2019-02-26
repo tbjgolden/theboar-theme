@@ -7,6 +7,8 @@ Description: The Boar 2019 Edition. Block editor friendly. Mobile friendly.
 Version: 1.0
 */
 
+// sass-lint:disable no-vendor-prefixes, variable-name-format, class-name-format, quotes, force-element-nesting, force-pseudo-nesting, leading-zero, no-css-comments, mixins-before-declarations, no-ids, no-qualifying-elements
+
 @import "shared";
 
 body {
@@ -53,7 +55,7 @@ textarea {
 .site-title,
 .site-info,
 #cancel-comment-reply-link,
-img:after,
+img::after,
 h1,
 h2,
 h3,
@@ -618,6 +620,8 @@ a {
   outline: 0;
 }
 
+// sass-lint:enable no-vendor-prefixes
+
 $icon-open: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class='tom-icon'%3E";
 $icon-close: '%3C/svg%3E';
 
@@ -910,19 +914,27 @@ $categories: (
 }
 
 #boar-logo {
-  position: absolute;
   display: inline-block;
-  top: 0;
-  font-size: 192px;
-  height: 192px;
-  width: 192px;
   color: rgba(127, 127, 127, .7);
-  left: 0;
-  transform: translate3d(-50%, 0, 0);
-  transition: transform .25s ease-in-out;
 
-  &:hover, &:focus, &:active {
-    transform: translate3d(-30%, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-size: 96px;
+  height: 96px;
+  width: 96px;
+
+  transform: translate3d(-50%, 0, 0);
+
+  @include media(mobile) {
+    transition: transform .25s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active {
+      transform: translate3d(-30%, 0, 0);
+    }
   }
 }
 
@@ -942,12 +954,10 @@ header,
 main,
 footer,
 .cells {
+  position: relative;
   padding: 1rem .5rem;
 
   @include media (mobile) {
     padding: 1rem;
   }
-}
-
-footer {
 }
