@@ -918,7 +918,7 @@ $categories: (
   color: rgba(127, 127, 127, .7);
 
   position: absolute;
-  top: 0;
+  top: ((128px - 96px) / 2);
   left: 0;
 
   font-size: 96px;
