@@ -29,7 +29,7 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
     );
 
     printf(
-      '<div class="posted-on">%1$s%2$s</div>',
+      '<div class="posted-on">%1$s %2$s</div>',
       twentynineteen_get_icon_svg( 'clock', 16 ),
       $time_string
     );
@@ -43,7 +43,7 @@ if ( ! function_exists( 'twentynineteen_posted_by' ) ) :
   function twentynineteen_posted_by() {
     printf(
       /* translators: 1: SVG icon. 2: post author, only visible to screen readers. 3: author link. */
-      '<div class="byline">%1$s<span class="screen-reader-text">%2$s</span><span class="author vcard"><a class="url fn n" href="%3$s">%4$s</a></span></div>',
+      '<div class="byline">%1$s <span class="screen-reader-text">%2$s</span><span class="author vcard"><a class="url fn n" href="%3$s">%4$s</a></span></div>',
       twentynineteen_get_icon_svg( 'user', 16 ),
       __( 'Posted by', 'twentynineteen' ),
       esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
@@ -83,7 +83,7 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
       if ( $categories_list ) {
         printf(
           /* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
-          '<span class="cat-links">%1$s<span class="screen-reader-text">%2$s</span>%3$s</span>',
+          '<span class="cat-links">%1$s <span class="screen-reader-text">%2$s</span>%3$s</span>',
           twentynineteen_get_icon_svg( 'archive', 16 ),
           __( 'Posted in', 'twentynineteen' ),
           $categories_list
@@ -95,7 +95,7 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
       if ( $tags_list ) {
         printf(
           /* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of tags. */
-          '<span class="tags-links">%1$s<span class="screen-reader-text">%2$s </span>%3$s</span>',
+          '<span class="tags-links">%1$s <span class="screen-reader-text">%2$s </span>%3$s</span>',
           twentynineteen_get_icon_svg( 'tag', 16 ),
           __( 'Tags:', 'twentynineteen' ),
           $tags_list
@@ -122,7 +122,7 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
         ),
         get_the_title()
       ),
-      '<span class="edit-link">' . twentynineteen_get_icon_svg( 'edit', 16 ),
+      '<span class="edit-link">' . twentynineteen_get_icon_svg( 'edit', 16 ) . ' ',
       '</span>'
     );
   }
