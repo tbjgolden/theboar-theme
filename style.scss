@@ -324,10 +324,6 @@ html {
   box-sizing: border-box;
 }
 
-::-moz-selection {
-  background-color: $color__background_selection;
-}
-
 ::selection {
   background-color: $color__background_selection;
 }
@@ -726,11 +722,8 @@ $categories: (
   );
   grid-gap: 0.5 * $size__spacing-unit;
   grid-auto-flow: row dense;
-  padding: 4px ($size__spacing-unit / 2);
-
-  @include media (mobile) {
-    padding: 4px $size__spacing-unit;
-  }
+  padding-top: 4px;
+  padding-bottom: 4px;
 
   .cell {
     background-color: #eee;
@@ -948,5 +941,18 @@ $categories: (
 
   &:hover, &:focus, &:active {
     transform: translate3d(-30%, 0, 0);
+  }
+}
+
+// global padding
+
+.cells,
+footer {
+  padding-left: .5rem;
+  padding-right: .5rem;
+
+  @include media (mobile) {
+    padding-left: $size__spacing-unit;
+    padding-right: $size__spacing-unit;
   }
 }
