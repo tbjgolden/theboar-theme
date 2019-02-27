@@ -1005,7 +1005,10 @@ $categories: (
 
 .byline {
   font-size: $font__size-md;
-  color: #fff;
+
+  a {
+    color: #fff;
+  }
 }
 
 .posted-on,
