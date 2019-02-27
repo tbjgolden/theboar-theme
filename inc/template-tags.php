@@ -15,18 +15,24 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
     $timestamp = get_the_time( 'U' );
     $modified_timestamp = get_the_modified_time( 'U' );
 
+    $timestamp_html = esc_html( date_i18n( get_option( 'date_format' ), $timestamp ) );
+
     echo '<div class="posted-on">' .
       twentynineteen_get_icon_svg( 'clock', 16 ) .
       ' <time class="entry-date published" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' .
-        esc_html( date_i18n( get_option( 'date_format' ), $timestamp ) ) .
+        $timestamp_html .
       '</time></div>';
 
-    if ( $timestamp !== $modified_timestamp ) {
-      echo '<div class="updated-on">' .
-        twentynineteen_get_icon_svg( 'rotate-cw', 16 ) .
-        ' <time class="entry-date updated" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' .
-          esc_html( date_i18n( get_option( 'date_format' ), $modified_timestamp ) ) .
-        '</time></div>';
+    if ( $timestamp !== $modified_timestamp && $modified_timestamp > $timestamp ) {
+      $modified_timestamp_html = esc_html( date_i18n( get_option( 'date_format' ), $modified_timestamp ) );
+
+      if ( $timestamp_html !== $modified_timestamp_html ) {
+        echo '<div class="updated-on">' .
+          twentynineteen_get_icon_svg( 'rotate-cw', 16 ) .
+          ' <time class="entry-date updated" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' .
+            esc_html( date_i18n( get_option( 'date_format' ), $modified_timestamp ) ) .
+          '</time></div>';
+      }
     }
   }
 endif;
