@@ -1003,6 +1003,11 @@ $categories: (
   overflow: hidden;
 }
 
+.author {
+  font-size: $font__size-md;
+  color: #fff;
+}
+
 .posted-on,
 .updated-on {
   font-size: $font__size-sm;

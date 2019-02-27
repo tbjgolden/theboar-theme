@@ -19,9 +19,10 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
 
     echo '<div class="posted-on">' .
       twentynineteen_get_icon_svg( 'clock', 16 ) .
+      '<span class="screen-reader-text">Published on</span>' .
       ' <time class="entry-date published" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' .
         $timestamp_html .
-      '</time></div>';
+    '</time></div>';
 
     if ( $timestamp !== $modified_timestamp && $modified_timestamp > $timestamp ) {
       $modified_timestamp_html = esc_html( date_i18n( get_option( 'date_format' ), $modified_timestamp ) );
@@ -29,9 +30,10 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
       if ( $timestamp_html !== $modified_timestamp_html ) {
         echo '<div class="updated-on">' .
           twentynineteen_get_icon_svg( 'rotate-cw', 16 ) .
+          '<span class="screen-reader-text">Last updated on</span>' .
           ' <time class="entry-date updated" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' .
             esc_html( date_i18n( get_option( 'date_format' ), $modified_timestamp ) ) .
-          '</time></div>';
+        '</time></div>';
       }
     }
   }
@@ -45,7 +47,6 @@ if ( ! function_exists( 'twentynineteen_posted_by' ) ) :
     printf(
       /* translators: 1: SVG icon. 2: post author, only visible to screen readers. 3: author link. */
       '<div class="byline">%1$s <span class="screen-reader-text">%2$s</span><span class="author vcard"><a class="url fn n" href="%3$s">%4$s</a></span></div>',
-      twentynineteen_get_icon_svg( 'user', 16 ),
       __( 'Posted by', 'twentynineteen' ),
       esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
       esc_html( get_the_author() )
