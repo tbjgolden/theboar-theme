@@ -15,24 +15,19 @@ if ( ! function_exists( 'twentynineteen_posted_on' ) ) :
     $timestamp = get_the_time( 'U' );
     $modified_timestamp = get_the_modified_time( 'U' );
 
-    $time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+    echo '<div class="posted-on">' .
+      twentynineteen_get_icon_svg( 'clock', 16 ) .
+      ' <time class="entry-date published" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' .
+        esc_html( date_i18n( get_option( 'date_format' ), $timestamp ) ) .
+      '</time></div>';
+
     if ( $timestamp !== $modified_timestamp ) {
-      $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><small> (Last updated: <time class="updated" datetime="%3$s">%4$s</time>)</small>';
+      echo '<div class="updated-on">' .
+        twentynineteen_get_icon_svg( 'rotate-cw', 16 ) .
+        ' <time class="entry-date updated" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' .
+          esc_html( date_i18n( get_option( 'date_format' ), $modified_timestamp ) ) .
+        '</time></div>';
     }
-
-    $time_string = sprintf(
-      $time_string,
-      esc_attr( get_the_date( DATE_W3C ) ),
-      esc_html( date_i18n( get_option( 'date_format' ), $timestamp ) ),
-      esc_attr( get_the_modified_date( DATE_W3C ) ),
-      esc_html( date_i18n( get_option( 'date_format' ), $modified_timestamp ) )
-    );
-
-    printf(
-      '<div class="posted-on">%1$s %2$s</div>',
-      twentynineteen_get_icon_svg( 'clock', 16 ),
-      $time_string
-    );
   }
 endif;
 
