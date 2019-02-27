@@ -1003,6 +1003,18 @@ $categories: (
   overflow: hidden;
 }
 
+header,
+main,
+footer,
+.cells {
+  position: relative;
+  padding: 1rem .5rem;
+
+  @include media (mobile) {
+    padding: 1rem;
+  }
+}
+
 @supports (object-fit: cover) {
   .site-featured-image {
     position: absolute;
@@ -1036,6 +1048,9 @@ $categories: (
     .entry-header {
       position: absolute;
       z-index: 8;
+      left: 0;
+      bottom: 0;
+      width: 100%;
     }
   }
 
@@ -1045,19 +1060,5 @@ $categories: (
     overflow: hidden;
     z-index: 11;
     color: #fff;
-  }
-}
-
-// global padding
-
-header,
-main,
-footer,
-.cells {
-  position: relative;
-  padding: 1rem .5rem;
-
-  @include media (mobile) {
-    padding: 1rem;
   }
 }
