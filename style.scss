@@ -1003,6 +1003,11 @@ $categories: (
   overflow: hidden;
 }
 
+.posted-on,
+.updated-on {
+  font-size: $font__size-sm;
+}
+
 header,
 main,
 footer,
