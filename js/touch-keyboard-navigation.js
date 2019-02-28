@@ -183,7 +183,7 @@
   function removeAllFocusStates() {
     "use strict";
 
-    var siteBranding = document.getElementsByClassName("site-branding")[0];
+    var siteBranding = document.getElementsByClassName("header")[0];
     var getFocusedElements = siteBranding.querySelectorAll(
       ":hover, :focus, :focus-within"
     );
