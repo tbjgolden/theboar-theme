@@ -16,7 +16,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $color__text-main;
   font-family: $font__body;
-  font-weight: 500;
+  font-weight: 400;
+  font-variation-settings: 'wght' 450;
   line-height: $font__line-height-body;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -33,7 +34,8 @@ optgroup,
 textarea {
   color: $color__text-main;
   font-family: $font__body;
-  font-weight: 500;
+  font-weight: 400;
+  font-variation-settings: 'wght' 450;
   line-height: $font__line-height-body;
   text-rendering: optimizeLegibility;
 }
