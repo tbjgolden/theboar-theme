@@ -716,6 +716,10 @@ $categories: (
     text-decoration: underline;
   }
 
+  article.post-cat-#{$cat-id} .entry-content > p:first-child::first-letter {
+    color: darken($color, 10%);
+  }
+
   // .cell.cell-cat-#{$cat-id} {
   //   .cell-header::before {
   //     background-color: $color !important;

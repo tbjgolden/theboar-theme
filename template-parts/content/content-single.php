@@ -13,7 +13,7 @@ $classes = join(' ', get_post_class());
 $post_cats = wp_get_post_categories(get_the_ID());
 foreach ($post_cats as $cat) {
   if ($cat < 15) {
-    $classes .= ' cell-cat-' . $cat;
+    $classes .= ' post-cat-' . $cat;
     break;
   }
 }
