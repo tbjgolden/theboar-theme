@@ -54,8 +54,8 @@ foreach ($post_cats as $cat) {
   </div><!-- .entry-content -->
 
   <?php
-  if ( function_exists( 'echo_ald_crp' ) ) {
-    echo_ald_crp();
+  if ( function_exists( 'echo_crp' ) ) {
+    echo_crp();
   }
 
   if ( ! is_singular( 'attachment' ) ) {
