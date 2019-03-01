@@ -1058,9 +1058,9 @@ $categories: (
   font-size: $font__size-sm;
 }
 
-header,
-main,
-footer,
+header.site-header,
+main.site-main,
+footer.site-footer,
 .cells,
 .entry-header {
   position: relative;
@@ -1199,4 +1199,9 @@ article.entry {
 .nav-previous,
 .nav-next {
   margin-top: .5rem;
+}
+
+.comment-list {
+  list-style: none;
+  padding-left: 0;
 }
