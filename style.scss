@@ -1208,4 +1208,11 @@ article.entry {
 .comment-list {
   list-style: none;
   padding-left: 0;
+
+  .avatar {
+    margin-top: 2rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+  }
 }
