@@ -42,7 +42,7 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
                 echo $avatar;
               } else {
                 printf( '<a href="%s" rel="external nofollow" class="url">', $comment_author_url );
-                echo $avatar;
+                  echo $avatar;
               }
             }
             /*
@@ -71,7 +71,7 @@ class TwentyNineteen_Walker_Comment extends Walker_Comment {
                   ),
                 )
               ),
-              '<b class="fn">' . get_comment_author_link( $comment ) . '</b>'
+              '<div class="comment-author-name">' . get_comment_author_link( $comment ) . '</div>'
             );
 
             if ( ! empty( $comment_author_url ) ) {

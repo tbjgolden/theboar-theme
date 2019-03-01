@@ -1215,4 +1215,10 @@ article.entry {
     width: 3rem;
     border-radius: 50%;
   }
+
+  .comment-author-name {
+    font-family: $font__heading;
+    font-weight: 700;
+    font-variation-settings: 'wght' 650;
+  }
 }
