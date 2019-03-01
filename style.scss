@@ -984,8 +984,14 @@ $categories: (
     }
   }
 
-  #site-navigation a[href]:not(:hover) {
+  #site-navigation a[href] {
     color: #fff !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline !important;
+    }
   }
 }
 
