@@ -975,6 +975,20 @@ $categories: (
   }
 }
 
+.single-post {
+  #boar-logo {
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+    }
+  }
+
+  #site-navigation a[href]:not(:hover) {
+    color: #fff !important;
+  }
+}
+
 .site-branding-container {
   padding-left: 2rem;
 
