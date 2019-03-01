@@ -1109,7 +1109,7 @@ article.entry {
   }
 
   .crp_related {
-    flex: 1 0 12rem;
+    flex: 1 0 14rem;
     max-width: 100%;
     padding-right: 2rem;
   }
@@ -1118,7 +1118,7 @@ article.entry {
     flex-wrap: nowrap;
 
     .crp_related {
-      flex-grow: 0;
+      max-width: 100%;
     }
   }
 }
