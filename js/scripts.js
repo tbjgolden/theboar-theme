@@ -27,8 +27,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
       }
     });
 
+  // darken category colors
   [].slice.call((document.querySelectorAll('.entry-content [style*="color:"]') || []), 0)
     .forEach(colored => {
-      console.log(colored.style.color, window.CategoryColorMap[colored.style.color]);
+      const newColor = window.CategoryColorMap[colored.style.color];
+      if (newColor) colored.style.color = newColor;
     });
 });
