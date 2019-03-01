@@ -1070,6 +1070,21 @@ footer,
   }
 }
 
+.single {
+  header,
+  main,
+  footer,
+  .cells,
+  .entry-header {
+    position: relative;
+    padding: 1.5rem 3rem;
+
+    @include media (mobile) {
+      padding: 1.5rem 3.5rem;
+    }
+  }
+}
+
 @supports (object-fit: cover) {
   .site-featured-image {
     position: absolute;
