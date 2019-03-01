@@ -1108,13 +1108,16 @@ article.entry {
   }
 
   .crp_related {
-    flex: 1 0 12rem;
+    flex: 0 0 12rem;
     max-width: 100%;
     padding-right: 2rem;
   }
 
   @include media(desktop) {
     flex-wrap: wrap;
+    .crp_related {
+      flex-grow: 1;
+    }
   }
 }
 
