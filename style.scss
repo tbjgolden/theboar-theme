@@ -1106,15 +1106,16 @@ article.entry {
 
   .entry-content {
     overflow-x: hidden;
-    flex: 0 0 0;
+    flex: 0 0 auto;
     width: 75ch;
     max-width: 100%;
     padding-right: 2rem;
   }
 
   .crp_related {
-    flex: 1 0 0;
-    width: 14rem;
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 14rem;
     padding-right: 2rem;
   }
 
