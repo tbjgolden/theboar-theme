@@ -30,11 +30,6 @@ foreach ($post_cats as $cat) {
   <?php twentynineteen_posted_by(); ?>
   <?php twentynineteen_posted_on(); ?>
   <span class="comment-count">
-    <?php
-    if ( ! empty( $discussion ) ) {
-      twentynineteen_discussion_avatars_list( $discussion->authors );
-    }
-    ?>
     <?php twentynineteen_comment_count(); ?>
   </span>
   <?php
