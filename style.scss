@@ -1097,7 +1097,8 @@ footer,
 }
 
 article.entry {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   margin-right: -2rem;
 
@@ -1108,15 +1109,16 @@ article.entry {
   }
 
   .crp_related {
-    flex: 0 0 12rem;
+    flex: 1 0 12rem;
     max-width: 100%;
     padding-right: 2rem;
   }
 
   @include media(desktop) {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
     .crp_related {
-      flex-grow: 1;
+      flex-grow: 0;
     }
   }
 }
