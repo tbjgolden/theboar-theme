@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   [].slice.call((document.querySelectorAll('.entry-content [style*="color:"]') || []), 0)
     .forEach(colored => {
-      console.log({ colored });
+      console.log(colored.style.color);
     });
 });
