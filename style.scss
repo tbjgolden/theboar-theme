@@ -1072,9 +1072,9 @@ footer.site-footer,
 }
 
 .single {
-  header,
-  main,
-  footer,
+  header.site-header,
+  main.site-main,
+  footer.site-footer,
   .cells,
   .entry-header {
     position: relative;
@@ -1099,6 +1099,7 @@ footer.site-footer,
 
 article.entry {
   display: flex;
+  max-width: calc(100% + 2rem);
   flex-wrap: wrap;
   align-items: flex-end;
   margin-right: -2rem;
