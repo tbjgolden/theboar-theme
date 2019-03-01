@@ -986,6 +986,7 @@ $categories: (
 
   #site-navigation a[href] {
     color: rgba(255, 255, 255, .8) !important;
+    font-size: $font__size-sm;
 
     &:hover,
     &:focus,
