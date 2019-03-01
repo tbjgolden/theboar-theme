@@ -1100,7 +1100,7 @@ article.entry {
   margin-right: -2rem;
 
   .entry-content {
-    flex: 0 0 70ch;
+    flex: 0 0 75ch;
     max-width: 100%;
     padding-right: 2rem;
   }
@@ -1109,6 +1109,11 @@ article.entry {
     flex: 0 0 12rem;
     max-width: 100%;
     padding-right: 2rem;
+  }
+
+  .comments-area,
+  .post-navigation {
+    max-width: 70ch;
   }
 }
 
