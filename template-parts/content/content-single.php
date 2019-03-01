@@ -53,8 +53,14 @@ foreach ($post_cats as $cat) {
     ?>
   </div><!-- .entry-content -->
 
-  <?php if ( ! is_singular( 'attachment' ) ) : ?>
-    <?php get_template_part( 'template-parts/post/author', 'bio' ); ?>
-  <?php endif; ?>
+  <?php
+  if ( function_exists( 'echo_ald_crp' ) ) {
+    echo_ald_crp();
+  }
+
+  if ( ! is_singular( 'attachment' ) ) {
+    get_template_part( 'template-parts/post/author', 'bio' );
+  }
+  ?>
 
 </article><!-- #post-${ID} -->
