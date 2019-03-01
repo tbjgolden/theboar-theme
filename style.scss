@@ -1097,22 +1097,25 @@ footer,
 }
 
 article.entry {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  align-items: flex-end;
   margin-right: -2rem;
 
   .entry-content {
-    flex: 0 0 75ch;
+    flex: 0 1 75ch;
     max-width: 100%;
     padding-right: 2rem;
   }
 
   .crp_related {
-    flex: 0 0 12rem;
+    flex: 1 0 12rem;
     max-width: 100%;
     padding-right: 2rem;
   }
 
+  @include media(desktop) {
+    flex-wrap: wrap;
+  }
 }
 
 @supports (object-fit: cover) {
