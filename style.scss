@@ -887,6 +887,7 @@ $categories: (
 
   a {
     display: inline-block;
+    width: 100%;
   }
 
   .crp_related_item {
@@ -975,11 +976,7 @@ $categories: (
 
 .single-post {
   #boar-logo {
-    &:hover,
-    &:focus,
-    &:active {
-      color: #fff;
-    }
+    color: #fff !important;
   }
 
   #site-navigation a[href] {
