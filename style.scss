@@ -1105,14 +1105,15 @@ article.entry {
   margin-right: -2rem;
 
   .entry-content {
-    flex: 0 1 75ch;
+    overflow-x: hidden;
+    width: 75ch;
     max-width: 100%;
     padding-right: 2rem;
   }
 
   .crp_related {
-    flex: 1 0 14rem;
-    max-width: 100%;
+    flex: 1 0 0;
+    width: 14rem;
     padding-right: 2rem;
   }
 
