@@ -976,16 +976,22 @@ $categories: (
 
 .single-post {
   #boar-logo {
-    color: #fff !important;
+    color: rgba(255, 255, 255, .8);
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+    }
   }
 
   #site-navigation a[href] {
-    color: #fff !important;
+    color: rgba(255, 255, 255, .8) !important;
 
     &:hover,
     &:focus,
     &:active {
       text-decoration: underline !important;
+      color: #fff !important;
     }
   }
 }
