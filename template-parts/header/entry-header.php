@@ -29,9 +29,6 @@ foreach ($post_cats as $cat) {
 <div class="entry-meta">
   <?php twentynineteen_posted_by(); ?>
   <?php twentynineteen_posted_on(); ?>
-  <span class="comment-count">
-    <?php twentynineteen_comment_count(); ?>
-  </span>
   <?php
   // Edit post link.
     edit_post_link(
