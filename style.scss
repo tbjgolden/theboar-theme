@@ -647,8 +647,6 @@ $icon-open: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class
 $icon-close: '%3C/svg%3E';
 
 #site-navigation {
-  line-height: 1.6;
-
   a[href*='/category/'] {
     background-color: #000;
     color: #fff;
@@ -1019,7 +1017,7 @@ $categories: (
 }
 
 #site-navigation a {
-  font-size: $font__size-sm;
+  font-size: $font__size-md;
   text-transform: uppercase;
   font-weight: bold;
   font-variation-settings: 'wght' 650;
