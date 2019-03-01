@@ -1091,3 +1091,19 @@ footer,
     color: #fff;
   }
 }
+
+.entry-content > p:first-child {
+  clear: both;
+  text-indent: -.4rem;
+
+  &::first-letter {
+    font-family: $font__heading;
+    font-weight: 700;
+    font-variation-settings: 'wght' 650;
+    float: left;
+    font-size: (($font__line-height-body * 3rem) + .2rem);
+    line-height: 3rem;
+    padding: 0 .5rem 0 .4rem;
+    margin-top: -.2rem;
+  }
+}

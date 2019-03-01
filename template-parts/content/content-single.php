@@ -9,9 +9,18 @@
  * @since 1.0.0
  */
 
+$classes = join(' ', get_post_class());
+$post_cats = wp_get_post_categories(get_the_ID());
+foreach ($post_cats as $cat) {
+  if ($cat < 15) {
+    $classes .= ' cell-cat-' . $cat;
+    break;
+  }
+}
+
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="<?php echo $classes; ?>">
   <?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
   <header class="entry-header">
     <?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
