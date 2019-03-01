@@ -1089,7 +1089,9 @@ footer,
   }
 
   .entry-title,
-  .entry-content {
+  .entry-content,
+  .comments-area,
+  .post-navigation {
     max-width: 70ch;
   }
 }
@@ -1111,10 +1113,6 @@ article.entry {
     padding-right: 2rem;
   }
 
-  .comments-area,
-  .post-navigation {
-    max-width: 70ch;
-  }
 }
 
 @supports (object-fit: cover) {
