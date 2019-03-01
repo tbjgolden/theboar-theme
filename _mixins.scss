@@ -34,7 +34,7 @@
 
 @mixin post-section-dash {
   &::before {
-    background: $color__text-light;
+    background: $color__primary;
     content: "\020";
     display: block;
     height: 2px;
