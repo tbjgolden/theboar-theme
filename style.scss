@@ -70,6 +70,7 @@ h5,
 h6 {
   font-family: $font__heading;
   font-weight: bold !important;
+  font-variation-settings: 'wght' 650;
 }
 
 .main-navigation,
@@ -91,6 +92,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  font-variation-settings: 'wght' 650;
   letter-spacing: -0.02em;
   line-height: $font__line-height-heading;
   -webkit-font-smoothing: antialiased;
@@ -179,6 +181,7 @@ h6 {
 .page-description,
 .page-links a {
   font-weight: bold;
+  font-variation-settings: 'wght' 650;
 }
 
 .post-navigation .post-title,
@@ -216,6 +219,7 @@ blockquote {
     font-style: normal;
     font-family: $font__heading;
     font-weight: bold !important;
+    font-variation-settings: 'wght' 650;
   }
 }
 
@@ -280,6 +284,7 @@ blockquote {
     font-style: normal;
     font-family: $font__heading;
     font-weight: bold !important;
+    font-variation-settings: 'wght' 650;
   }
 }
 
@@ -426,6 +431,7 @@ nav ul {
 
 dt {
   font-weight: bold;
+  font-variation-settings: 'wght' 650;
 }
 
 dd {
@@ -448,6 +454,7 @@ blockquote {
   margin-left: 0;
   padding: 0 0 0 1rem;
   font-weight: bold;
+  font-variation-settings: 'wght' 650;
 
   > p {
     margin: 0 0 1rem;
@@ -472,6 +479,7 @@ table {
   width: 100%;
   font-family: $font__heading;
   font-weight: bold !important;
+  font-variation-settings: 'wght' 650;
 
   td,
   th {
@@ -496,6 +504,7 @@ input[type="submit"] {
   font-family: $font__heading;
   font-size: $font__size-sm;
   font-weight: 700 !important;
+  font-variation-settings: 'wght' 650;
   line-height: $font__line-height-heading;
   outline: none;
   padding: .5rem;
@@ -616,6 +625,7 @@ a {
     display: block;
     font-size: 1rem;
     font-weight: bold;
+    font-variation-settings: 'wght' 650;
     height: auto;
     left: 5px;
     line-height: normal;
@@ -652,7 +662,7 @@ $icon-close: '%3C/svg%3E';
   padding: 0 2px;
   font-family: $font__heading;
   font-weight: 700 !important;
-
+  font-variation-settings: 'wght' 650;
 }
 
 #site-navigation.in-cat a[href] {
@@ -897,6 +907,7 @@ $categories: (
     font-size: .8em;
     font-family: $font__heading;
     font-weight: bold;
+    font-variation-settings: 'wght' 650;
     line-height: 1.3;
     display: inline-block;
 
@@ -977,6 +988,7 @@ $categories: (
   font-size: .7rem;
   text-transform: uppercase;
   font-weight: bold;
+  font-variation-settings: 'wght' 650;
   font-family: $font__heading;
   color: rgb(127, 127, 127);
   padding: 0 2px;
@@ -986,6 +998,7 @@ $categories: (
   font-size: $font__size-sm;
   text-transform: uppercase;
   font-weight: bold;
+  font-variation-settings: 'wght' 650;
   font-family: $font__heading;
 }
 
