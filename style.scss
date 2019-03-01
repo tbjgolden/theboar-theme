@@ -720,9 +720,6 @@ $categories: (
     color: darken($color, 10%);
   }
 
-  // sass-lint:disable no-warn
-  @warn 'name         ' $name '           cat-id            ' $cat-id '        color        ' rgba($color, .5) '            darkcolor            ' rgba(darken($color, 10%), .5);
-
   // .cell.cell-cat-#{$cat-id} {
   //   .cell-header::before {
   //     background-color: $color !important;
