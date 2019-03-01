@@ -1130,9 +1130,9 @@ footer,
     font-weight: 700;
     font-variation-settings: 'wght' 650;
     float: left;
-    font-size: (($font__line-height-body * 2rem) + .2rem);
-    line-height: (($font__line-height-body * 2rem) + .2rem);
+    font-size: (($font__line-height-body * 2rem) + .25rem);
+    line-height: (($font__line-height-body * 2rem) + .25rem);
     padding: 0 .5rem 0 .4rem;
-    margin-top: -.2rem;
+    margin-top: -.25rem;
   }
 }
