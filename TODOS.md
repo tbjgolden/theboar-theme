@@ -1,0 +1,9 @@
+- Fix width of content
+- Make related posts a sidebar on desktop
+- "Hottest content"
+- Search, top links
+- Tagline
+- Fix single pages (as opposed to posts)
+- Disable comments on single pages
+- Fix about page
+- Release
