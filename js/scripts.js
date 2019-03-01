@@ -30,7 +30,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // darken category colors
   [].slice.call((document.querySelectorAll('.entry-content [style*="color:"]') || []), 0)
     .forEach(colored => {
-      const newColor = window.CategoryColorMap[colored.style.color];
-      if (newColor) colored.style.color = newColor;
+      var oldColor = colored.style.color;
+      var newColor = window.CategoryColorMap[oldColor];
+      if (newColor) {
+        colored.style.color = newColor;
+      } else {
+        // try {
+          var rgb = oldColor.substring(oldColor.indexOf('(') + 1, oldColor.length - 1).split(',').map(s => ~~s);
+          var luminance = 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
+          console.log(luminance);
+        // } catch (e) {}
+      }
     });
 });
