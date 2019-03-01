@@ -1097,18 +1097,18 @@ footer,
 article.entry {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -1rem;
+  margin-right: -2rem;
 
   .entry-content {
     flex: 0 0 70ch;
     max-width: 100%;
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
 
   .crp_related {
     flex: 0 0 12rem;
     max-width: 100%;
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
 }
 
