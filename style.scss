@@ -1088,8 +1088,24 @@ footer,
     }
   }
 
-  .entry-title {
+  .entry-title,
+  .entry-content {
     max-width: 70ch;
+  }
+}
+
+article.entry {
+  display: flex;
+  flex-wrap: wrap;
+
+  .entry-content {
+    flex: 0 0 70ch;
+    max-width: 100%;
+  }
+
+  .crp_related {
+    flex: 0 0 18rem;
+    max-width: 100%;
   }
 }
 
