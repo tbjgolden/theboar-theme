@@ -720,6 +720,9 @@ $categories: (
     color: darken($color, 10%);
   }
 
+  // sass-lint:disable no-warn
+  @warn darken($color, 10%);
+
   // .cell.cell-cat-#{$cat-id} {
   //   .cell-header::before {
   //     background-color: $color !important;
