@@ -1104,7 +1104,8 @@ article.entry {
   }
 
   .crp_related {
-    flex: 0 0 18rem;
+    flex: 0 1 18rem;
+    min-width: 12rem;
     max-width: 100%;
   }
 }
