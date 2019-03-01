@@ -1121,7 +1121,7 @@ footer,
   margin-right: 8px;
 }
 
-.entry-content > p:first-child {
+.entry-content > p:first-child:not(.no-dropcap) {
   clear: both;
   text-indent: -.4rem;
 
