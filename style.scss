@@ -1114,6 +1114,10 @@ footer,
   }
 }
 
+.footer-navigation li:not(:last-child) > a {
+  margin-right: 8px;
+}
+
 .entry-content > p:first-child {
   clear: both;
   text-indent: -.4rem;
