@@ -46,7 +46,7 @@ get_header();
 
             $html = '';
             for ( $i = sizeof($most_viewed) - 1; $i >= 0; $i++ ) {
-              $post = $most_viewed[i];
+              $post = $most_viewed[$i];
               $link_html =get_permalink( $post );
               $html = $link_html . $html;
             }
