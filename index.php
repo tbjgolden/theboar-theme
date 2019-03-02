@@ -31,7 +31,10 @@ get_header();
       ?>
 
       <div class="cell most-read">
-        <h3 class="most-read-title">Most Read</h3>
+        <h3 class="most-read-title">
+          <?php twentynineteen_get_icon_svg( 'mouse-pointer', 22 ) ?>
+          Most Read
+        </h3>
         <ul class="most-read">
           <?php
             $query = new WP_Query(
