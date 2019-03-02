@@ -34,6 +34,19 @@ get_header();
       }
       ?>
 
+      <div class="cell most-read"><div class="row">
+        <h3 class="most-read-title">Popular Content</h3>
+        <ul class="most-read">
+          <?php
+            pvc_get_most_viewed_posts(
+              array(
+                'number_of_posts' => 10
+              )
+            );
+          ?>
+        </ul>
+      </div>
+
       <div class="cell sponsors">
         <a class="sponsor" href="https://warwick.ac.uk/services/sport/join/?utm_source=theboar.org&utm_medium=banner&fbclid=IwAR2X6Nfg9Yoz-w88MiBLJpOdJLDuk0bxCC3TTjzlL6UTsxok9JP0skjtgGQ" target="_blank">
           <img alt="Warwick Sport" src="/wp-content/uploads/2018/10/Sport-webanner.png">

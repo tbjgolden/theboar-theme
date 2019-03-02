@@ -1,5 +1,3 @@
-- Fix width of content
-- Make related posts a sidebar on desktop
 - "Hottest content"
 - Search, top links
 - Tagline
