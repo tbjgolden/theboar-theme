@@ -38,11 +38,12 @@ get_header();
         <h3 class="most-read-title">Popular Content</h3>
         <ul class="most-read">
           <?php
-            pvc_get_most_viewed_posts(
+            $most_viewed = pvc_get_most_viewed_posts(
               array(
                 'number_of_posts' => 10
               )
             );
+            echo $most_viewed;
           ?>
         </ul>
       </div>
