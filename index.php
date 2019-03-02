@@ -43,7 +43,15 @@ get_header();
                 'number_of_posts' => 10
               )
             );
-            var_dump($most_viewed);
+
+            $html = '';
+            for ( $i = sizeof($most_viewed) - 1; $i >= 0; $i++ ) {
+              $post = $most_viewed[i];
+              $link_html =get_permalink( $post );
+              $html = $link_html . $html;
+            }
+
+            echo $html;
           ?>
         </ul>
       </div>
