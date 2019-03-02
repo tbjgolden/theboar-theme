@@ -941,6 +941,25 @@ $categories: (
   }
 }
 
+.cell.most-read {
+  grid-column: span 1 / -1;
+  grid-row: auto / span 2;
+  padding: 1rem;
+
+  .most-read-title {
+    margin-top: 0;
+  }
+
+  .most-read {
+    list-style-type: 0;
+    padding: 0;
+  }
+
+  .list-item {
+    margin-top: .2px;
+  }
+}
+
 #boar-logo {
   display: inline-block;
 
