@@ -43,7 +43,7 @@ get_header();
                 'number_of_posts' => 10
               )
             );
-            echo $most_viewed;
+            var_dump($most_viewed);
           ?>
         </ul>
       </div>
