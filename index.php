@@ -34,7 +34,7 @@ get_header();
       }
       ?>
 
-      <div class="cell most-read"><div class="row">
+      <div class="cell most-read">
         <h3 class="most-read-title">Popular Content</h3>
         <ul class="most-read">
           <?php
