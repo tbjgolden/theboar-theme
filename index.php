@@ -42,7 +42,7 @@ get_header();
                   'inclusive' => true
                 ),
                 'orderby' => 'post_views',
-                'posts_per_page' => 10
+                'posts_per_page' => 5
               )
             );
 

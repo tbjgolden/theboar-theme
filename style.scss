@@ -951,12 +951,13 @@ $categories: (
   }
 
   .most-read {
-    list-style-type: 0;
+    list-style: none;
     padding: 0;
   }
 
   .list-item {
-    margin-top: .2px;
+    display: block;
+    margin-top: .5rem;
   }
 }
 

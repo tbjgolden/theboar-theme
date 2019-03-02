@@ -11,6 +11,6 @@
 
 ?>
 
-<a href="%s" class="list-item" rel="bookmark">
+<a href="<?php echo get_permalink(); ?>" class="list-item" rel="bookmark">
   <?php the_title( '<li>', '</li>' ); ?>
 </a>
