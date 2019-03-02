@@ -943,11 +943,11 @@ $categories: (
 
 .cell.most-read {
   grid-column: span 1 / -1;
-  grid-row: auto / span 2;
+  grid-row: auto / span 3;
   padding: 1rem;
 
   .most-read-title {
-    margin-top: 0;
+    margin: 0;
   }
 
   .most-read {
@@ -957,7 +957,7 @@ $categories: (
 
   .list-item {
     display: block;
-    margin-top: .5rem;
+    margin-top: 1rem;
   }
 }
 
