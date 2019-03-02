@@ -48,7 +48,7 @@ get_header();
 
             while ( $query->have_posts() ) {
               $query->the_post();
-              get_template_part( 'template-parts/content/content-cell' );
+              get_template_part( 'template-parts/content/content-listitem' );
             }
           ?>
         </ul>
