@@ -20,17 +20,13 @@ get_header();
   <section id="primary" class="content-area">
     <main id="main" class="site-main cells">
       <?php
-      $query = new WP_Query(array('cat' => '34573', 'posts_per_page' => 4));
-
       $GLOBALS['POST_COUNT'] = 1;
 
-      if ( $query->have_posts() ) {
-        // Load posts loop.
-        while ( $query->have_posts() ) {
-          $query->the_post();
-          get_template_part( 'template-parts/content/content-cell' );
-          $GLOBALS['POST_COUNT'] += 1;
-        }
+      $query = new WP_Query(array('cat' => '34573', 'posts_per_page' => 4));
+      while ( $query->have_posts() ) {
+        $query->the_post();
+        get_template_part( 'template-parts/content/content-cell' );
+        $GLOBALS['POST_COUNT'] += 1;
       }
       ?>
 
@@ -38,20 +34,22 @@ get_header();
         <h3 class="most-read-title">Popular Content</h3>
         <ul class="most-read">
           <?php
-            $most_viewed = pvc_get_most_viewed_posts(
+            $query = new WP_Query(
               array(
-                'number_of_posts' => 10
+                'date_query' => array(
+                  'after' => date("Y-m-d", strtotime(date("Y-m-d") . "-1 month")),
+                  'before' => date("Y-m-d"),
+                  'inclusive' => true
+                ),
+                'orderby' => 'post_views',
+                'posts_per_page' => 10
               )
             );
 
-            $html = '';
-            for ( $i = sizeof($most_viewed) - 1; $i >= 0; $i-- ) {
-              $post = $most_viewed[$i];
-              $link_html =get_permalink( $post );
-              $html = $link_html . $html;
+            while ( $query->have_posts() ) {
+              $query->the_post();
+              get_template_part( 'template-parts/content/content-cell' );
             }
-
-            echo $html;
           ?>
         </ul>
       </div>
@@ -67,36 +65,24 @@ get_header();
 
       <?php
       $query = new WP_Query(array('cat' => '2,4', 'posts_per_page' => 6));
-
-      if ( $query->have_posts() ) {
-        // Load posts loop.
-        while ( $query->have_posts() ) {
-          $query->the_post();
-          get_template_part( 'template-parts/content/content-cell' );
-          $GLOBALS['POST_COUNT'] += 1;
-        }
+      while ( $query->have_posts() ) {
+        $query->the_post();
+        get_template_part( 'template-parts/content/content-cell' );
+        $GLOBALS['POST_COUNT'] += 1;
       }
 
       $query = new WP_Query(array('cat' => '12,3,13,5,10', 'posts_per_page' => 7));
-
-      if ( $query->have_posts() ) {
-        // Load posts loop.
-        while ( $query->have_posts() ) {
-          $query->the_post();
-          get_template_part( 'template-parts/content/content-cell' );
-          $GLOBALS['POST_COUNT'] += 1;
-        }
+      while ( $query->have_posts() ) {
+        $query->the_post();
+        get_template_part( 'template-parts/content/content-cell' );
+        $GLOBALS['POST_COUNT'] += 1;
       }
 
       $query = new WP_Query(array('cat' => '6,7,11,9,8', 'posts_per_page' => 8));
-
-      if ( $query->have_posts() ) {
-        // Load posts loop.
-        while ( $query->have_posts() ) {
-          $query->the_post();
-          get_template_part( 'template-parts/content/content-cell' );
-          $GLOBALS['POST_COUNT'] += 1;
-        }
+      while ( $query->have_posts() ) {
+        $query->the_post();
+        get_template_part( 'template-parts/content/content-cell' );
+        $GLOBALS['POST_COUNT'] += 1;
       }
       ?>
     </main><!-- .site-main -->
