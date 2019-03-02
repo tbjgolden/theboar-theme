@@ -943,7 +943,7 @@ $categories: (
 
 .cell.most-read {
   grid-column: span 1 / -1;
-  grid-row: auto / span 3;
+  grid-row: auto / span 2;
   padding: 1rem;
 
   .most-read-title {
@@ -958,6 +958,14 @@ $categories: (
   .list-item {
     display: block;
     margin-top: 1rem;
+
+    li {
+      font-size: $font__size-sm;
+      font-family: $font__heading;
+      font-weight: bold;
+      font-variation-settings: 'wght' 650;
+      line-height: $font__line-height-heading;
+    }
   }
 }
 
