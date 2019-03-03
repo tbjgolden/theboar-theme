@@ -648,10 +648,29 @@ $icon-open: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class
 $icon-close: '%3C/svg%3E';
 
 #site-navigation {
-  a[href*='/category/'] {
-    background-color: #000;
-    color: #fff;
-    padding: 0 4px;
+  a {
+    font-size: $font__size-md;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-variation-settings: 'wght' 650;
+    font-family: $font__heading;
+
+    &[href*='/category/'] {
+      background-color: #000;
+      color: #fff;
+      padding: 0 4px;
+    }
+  }
+
+  &.in-cat a[href] {
+    transition: opacity .11s ease-in-out;
+    opacity: .5;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
   }
 }
 
@@ -662,17 +681,6 @@ $icon-close: '%3C/svg%3E';
   font-family: $font__heading;
   font-weight: 700 !important;
   font-variation-settings: 'wght' 650;
-}
-
-#site-navigation.in-cat a[href] {
-  transition: opacity .11s ease-in-out;
-  opacity: .5;
-
-  &:hover,
-  &:focus,
-  &:active {
-    opacity: 1;
-  }
 }
 
 // prettier-ignore-start
@@ -1047,14 +1055,6 @@ $categories: (
   font-family: $font__heading;
   color: rgb(127, 127, 127);
   padding: 0 2px;
-}
-
-#site-navigation a {
-  font-size: $font__size-md;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-variation-settings: 'wght' 650;
-  font-family: $font__heading;
 }
 
 .tom-icon {
