@@ -34,7 +34,7 @@
       array(
         'theme_location' => 'menu-2',
         'menu_class'     => 'top-menu',
-        'items_wrap'     => '<ol id="%1$s" class="%2$s">%3$s</ol>',
+        'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
       )
     );
     echo '</nav><!-- #top-navigation -->';

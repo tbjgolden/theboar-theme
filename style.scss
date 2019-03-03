@@ -992,6 +992,7 @@ $categories: (
   .most-read {
     list-style: none;
     padding: 0;
+    counter-reset: rank;
   }
 
   .list-item {
@@ -999,6 +1000,11 @@ $categories: (
     margin-top: 1rem;
 
     li {
+      &::before {
+        counter-increment: rank;
+        content: counter(rank);
+      }
+
       font-size: $font__size-sm;
       font-family: $font__heading;
       font-weight: bold;
