@@ -1087,6 +1087,10 @@ $categories: (
   color: rgb(127, 127, 127);
   padding: 0 2px;
 
+  .todays-date {
+    display: inline-block;
+  }
+
   .spacer {
     white-space: pre;
     display: inline-block;
