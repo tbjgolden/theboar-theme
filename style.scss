@@ -1089,13 +1089,25 @@ $categories: (
 }
 
 #top-navigation {
+  display: inline;
+
+  .spacer {
+    white-space: pre;
+    display: inline-block;
+  }
+
   ul {
+    display: inline;
     list-style: none;
     padding: 0;
   }
 
-  li:not(:last-child) {
-    margin-right: .5rem;
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
   }
 }
 
