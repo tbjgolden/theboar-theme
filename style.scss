@@ -33,12 +33,14 @@ input,
 select,
 optgroup,
 textarea {
-  color: $color__text-main;
-  font-family: $font__body;
-  font-weight: 400;
-  font-variation-settings: 'wght' 450;
-  line-height: $font__line-height-body;
-  text-rendering: optimizeLegibility;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  line-height: 1;
 }
 
 .author-description .author-link,
@@ -500,34 +502,8 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  @include button-transition;
-  background: $color__background-button;
-  border: 0;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: $color__background-body;
-  font-family: $font__heading;
-  font-size: $font__size-sm;
-  font-weight: 700 !important;
-  font-variation-settings: 'wght' 650;
-  line-height: $font__line-height-heading;
-  padding: .5rem;
-  text-decoration: none;
   vertical-align: bottom;
-
-  &:hover {
-    background: $color__background-button-hover;
-    cursor: pointer;
-  }
-
-  &:visited {
-    color: $color__background-body;
-    text-decoration: none;
-  }
-
-  &:focus {
-    background: $color__background-button-hover;
-  }
+  cursor: pointer;
 }
 
 input[type="text"],
@@ -548,15 +524,6 @@ input[type="color"],
 textarea {
   -webkit-backface-visibility: hidden;
   -webkit-appearance: none;
-  background: $color__background-input;
-  border: solid 1px $color__border;
-  box-sizing: border-box;
-  padding: .5rem .8rem;
-  border-radius: 0;
-
-  &:focus {
-    border-color: $color__link;
-  }
 }
 
 input[type="search"] {
@@ -565,11 +532,7 @@ input[type="search"] {
   }
 }
 
-select {
-}
-
 textarea {
-  box-sizing: border-box;
   display: block;
   width: 100%;
   max-width: 100%;
