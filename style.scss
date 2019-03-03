@@ -858,14 +858,14 @@ $categories: (
 
     img {
       transition: transform 3s ease-out;
-      transform: scale3d(1, 1, 1);
+      transform: scale3d(1.1, 1.1, 1);
     }
 
     &:hover,
     &:focus,
     &:active {
       img {
-        transform: scale(1.1, 1.1, 1);
+        transform: scale3d(1, 1, 1);
       }
     }
   }
