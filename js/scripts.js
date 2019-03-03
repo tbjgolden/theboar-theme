@@ -7,9 +7,22 @@ window.addEventListener("keyup", function(event) {
 ((function () {
   var wordCharRegex = /[A-Za-z0-9]/i
 
-  function $ (s) {
-    return [].slice.call((document.querySelectorAll(s) || []), 0);
+  function $ (s, el) {
+    return [].slice.call(((el || document).querySelectorAll(s) || []), 0);
   }
+
+  $('.search-form').forEach(function (el) {
+    el.addEventListener('submit', function (event) {
+      var inputs = $('input', event.target)
+      for (var i = inputs.length - 1; i >= 0; i--) {
+        if (!inputs[i].value) {
+          event.stopPropagation();
+          event.preventDefault();
+          return false;
+        }
+      }
+    });
+  });
 
   $('.scroll-to-content').forEach(function (el) {
     var content = $(el.getAttribute('href'))[0];
@@ -21,7 +34,6 @@ window.addEventListener("keyup", function(event) {
       return false;
     });
   });
-  
 
   document.addEventListener("DOMContentLoaded", function(event) {
     var pageEl = document.querySelector('#page');
