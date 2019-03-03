@@ -1001,19 +1001,23 @@ $categories: (
     display: block;
     margin-top: 1rem;
 
+    &::before {
+      display: inline-block;
+      width: 1.5rem;
+      counter-increment: rank;
+      content: counter(rank);
+      font-size: $font__size-xl;
+      color: #000;
+    }
+
     li {
+      display: inline-block;
+      width: calc(100% - 1.5rem);
       font-size: $font__size-sm;
       font-family: $font__heading;
       font-weight: bold;
       font-variation-settings: 'wght' 650;
       line-height: $font__line-height-heading;
-
-      &::before {
-        counter-increment: rank;
-        content: counter(rank);
-        font-size: $font__size-lg;
-        color: #000;
-      }
     }
   }
 }
