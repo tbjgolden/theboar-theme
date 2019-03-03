@@ -723,14 +723,14 @@ $categories: (
     }
   }
 
+  #site-navigation.in-cat.in-cat-#{$cat-id} a[href*='/category/#{$name}/'] {
+    opacity: 1 !important;
+    text-decoration: underline;
+  }
+
   article.post-cat-#{$cat-id} .entry-content > p:first-child::first-letter {
     color: darken($color, 10%);
   }
-}
-
-#site-navigation.in-cat a[href*='/category/'] {
-  opacity: 1 !important;
-  text-decoration: underline;
 }
 
 .cells {
