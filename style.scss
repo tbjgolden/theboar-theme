@@ -1055,6 +1055,17 @@ $categories: (
   }
 }
 
+.scroll-to-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  transform: translate3d(0, 50%, 0);
+}
+
 .single-post {
   #boar-logo {
     color: rgba(255, 255, 255, .8);

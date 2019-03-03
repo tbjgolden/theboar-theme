@@ -36,6 +36,9 @@ ini_set('display_errors', 1);
             <?php get_template_part( 'template-parts/header/entry', 'header' ); ?>
           </div><!-- .entry-header -->
           <?php rewind_posts(); ?>
+          <a href="#content" class="scroll-to-content">
+            <?php echo twentynineteen_get_icon_svg( 'chevrons-down', 22 ); ?>
+          </a>
         </div>
       <?php endif; ?>
     </header><!-- #masthead -->
