@@ -1177,10 +1177,7 @@ $categories: (
 
   li {
     display: inline-block;
-
-    &:not(:last-child) {
-      margin-right: .5rem;
-    }
+    margin-left: .5rem;
   }
 }
 
@@ -1268,6 +1265,7 @@ article.entry {
   .crp_related {
     flex: 1 0 auto;
     align-self: flex-end;
+    max-width: 75ch;
     width: 100%;
     padding-right: 2rem;
   }
