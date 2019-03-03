@@ -1095,6 +1095,10 @@ $categories: (
   color: rgb(127, 127, 127);
   padding: 0 2px;
 
+  .search-submit {
+    padding: .3rem;
+  }
+
   &.no-logo-below {
     margin-bottom: 1rem;
 
