@@ -649,6 +649,8 @@ $icon-open: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class
 $icon-close: '%3C/svg%3E';
 
 #site-navigation {
+  max-width: 600px;
+
   a {
     font-size: $font__size-md;
     text-transform: uppercase;
