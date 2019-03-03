@@ -1270,7 +1270,7 @@ article.entry {
     padding-right: 2rem;
   }
 
-  @media (desktop) {
+  @include media(desktop) {
     flex-wrap: nowrap;
 
     .crp_related {
