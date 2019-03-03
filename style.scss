@@ -1060,10 +1060,10 @@ $categories: (
   z-index: 88;
   bottom: 0;
   right: 3.5rem;
-  background-color: #eee;
+  background-color: $color__primary;
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   transform: translate3d(0, 50%, 0);
 
   span {
@@ -1071,16 +1071,6 @@ $categories: (
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
-    color: #000;
-    transition: color .1s ease-in-out;
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    span {
-      color: $color__primary;
-    }
   }
 }
 
