@@ -19,6 +19,8 @@
       echo ' in-homepage';
     } elseif ( is_category() ) {
       echo ' in-category';
+    } elseif ( is_singular( 'post' ) ) {
+      echo ' in-post';
     }
     echo '">';
 
