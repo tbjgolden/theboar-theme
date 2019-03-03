@@ -22,6 +22,10 @@
     function unfixWidth () {
       if (pageEl) {
         pageEl.style.width = prevPageElWidth;
+        [].slice.call((document.querySelectorAll('img') || []), 0)
+          .forEach((img, i) => {
+            img.style.visibility = img.oldVisibility;
+          });
         resizeTimeout = null;
       }
     }
@@ -59,7 +63,15 @@
 
     // on window resize
     window.addEventListener("resize", function (event) {
-      clearTimeout(resizeTimeout);
+      if (!resizeTimeout) {
+        [].slice.call((document.querySelectorAll('img') || []), 0)
+          .forEach((img, i) => {
+            img.oldVisibility = img.style.visibility;
+            img.style.visibility = 'hidden';
+          });
+      } else {
+        clearTimeout(resizeTimeout);
+      }
       resizeTimeout = setTimeout(unfixWidth, 100);
     });
   });
