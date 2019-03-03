@@ -857,6 +857,7 @@ $categories: (
     overflow: hidden;
 
     img {
+      transform-origin: 50% 20%;
       transition: transform 1s ease-out;
     }
 
