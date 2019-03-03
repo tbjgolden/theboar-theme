@@ -32,6 +32,7 @@
     }
 
     echo '<nav id="top-navigation" class="top-navigation" aria-label="Top Menu">';
+    get_search_form();
     wp_nav_menu(
       array(
         'theme_location' => 'menu-2',
