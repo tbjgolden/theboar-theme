@@ -369,13 +369,10 @@ a:visited {
 a:hover,
 a:active {
   color: $color__link-hover;
-  outline: 0;
   text-decoration: none;
 }
 
 a:focus {
-  outline: thin;
-  outline-style: dotted;
   text-decoration: underline;
 }
 
@@ -514,7 +511,6 @@ input[type="submit"] {
   font-weight: 700 !important;
   font-variation-settings: 'wght' 650;
   line-height: $font__line-height-heading;
-  outline: none;
   padding: .5rem;
   text-decoration: none;
   vertical-align: bottom;
@@ -531,8 +527,6 @@ input[type="submit"] {
 
   &:focus {
     background: $color__background-button-hover;
-    outline: thin dotted;
-    outline-offset: -4px;
   }
 }
 
@@ -557,15 +551,11 @@ textarea {
   background: $color__background-input;
   border: solid 1px $color__border;
   box-sizing: border-box;
-  outline: none;
   padding: .5rem .8rem;
-  outline-offset: 0;
   border-radius: 0;
 
   &:focus {
     border-color: $color__link;
-    outline: thin solid rgba($color__link, 0.15);
-    outline-offset: -4px;
   }
 }
 
@@ -603,12 +593,10 @@ a {
   &:hover,
   &:active {
     color: $color__link-hover;
-    outline: 0;
     text-decoration: none;
   }
 
   &:focus {
-    outline: thin dotted;
     text-decoration: underline;
   }
 }
