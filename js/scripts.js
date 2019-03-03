@@ -36,5 +36,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 window.addEventListener("resize", function (event) {
+  [].slice.call((document.querySelectorAll('img') || []), 0)
+    .forEach((img, i) => {
+      img.style.visibility = 'hidden';
+    });
   console.log(event);
 });
