@@ -857,16 +857,18 @@ $categories: (
     overflow: hidden;
 
     img {
-      transition: transform 1s ease-out;
-      transform: scale3d(1, 1, 1);
+      transition: 1s ease-out;
+      transition-property: top, left, right, bottom;
     }
 
     &:hover,
     &:focus,
     &:active {
       img {
-        transform: scale3d(1.1, 1.1, 1);
-        transition: transform 1s ease-in;
+        top: -1rem;
+        left: -1rem;
+        right: -1rem;
+        bottom: -1rem;
       }
     }
   }
