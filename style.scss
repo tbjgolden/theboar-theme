@@ -1005,7 +1005,8 @@ $categories: (
       counter-increment: rank;
       content: counter(rank);
       font-size: $font__size-xl;
-      margin: 0 .4rem 0 0;
+      margin: 0 .6rem 0 0;
+      line-height: 1;
       flex: 0 0 auto;
       color: #000;
     }
