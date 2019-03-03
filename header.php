@@ -37,7 +37,9 @@ ini_set('display_errors', 1);
           </div><!-- .entry-header -->
           <?php rewind_posts(); ?>
           <a href="#content" class="scroll-to-content">
-            <?php echo twentynineteen_get_icon_svg( 'chevrons-down', 22 ); ?>
+            <span>
+              <?php echo twentynineteen_get_icon_svg( 'chevrons-down', 22 ); ?>
+            </span>
           </a>
         </div>
       <?php endif; ?>

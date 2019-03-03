@@ -1057,13 +1057,30 @@ $categories: (
 
 .scroll-to-content {
   position: absolute;
+  z-index: 88;
   bottom: 0;
-  right: 0;
+  right: 3.5rem;
   background-color: #fff;
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   transform: translate3d(0, 50%, 0);
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    color: #000;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    span {
+      color: #333;
+    }
+  }
 }
 
 .single-post {
