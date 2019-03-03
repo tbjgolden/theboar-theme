@@ -505,6 +505,9 @@ input[type="reset"],
 input[type="submit"] {
   vertical-align: bottom;
   cursor: pointer;
+  background-color: rgba(127, 127, 127, .15);
+  padding: .15rem .35rem;
+  color: #000;
 }
 
 input[type="text"],
@@ -525,8 +528,8 @@ input[type="color"],
 textarea {
   -webkit-backface-visibility: hidden;
   -webkit-appearance: none;
-  padding: 0 .2rem;
-  background-color: rgba(127, 127, 127, .3);
+  background-color: rgba(127, 127, 127, .1);
+  padding: .15rem .35rem;
   color: #000;
 }
 
