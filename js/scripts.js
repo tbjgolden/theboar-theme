@@ -63,15 +63,16 @@
 
     // on window resize
     window.addEventListener("resize", function (event) {
-      clearTimeout(resizeTimeout);
-      resizeTimeout = setTimeout(unfixWidth, 100);
       if (!resizeTimeout) {
         [].slice.call((document.querySelectorAll('img') || []), 0)
           .forEach((img, i) => {
             img.oldVisibility = img.style.visibility;
             img.style.visibility = 'hidden';
           });
+      } else {
+        clearTimeout(resizeTimeout);
       }
+      resizeTimeout = setTimeout(unfixWidth, 100);
     });
   });
 })());
