@@ -1132,6 +1132,10 @@ $categories: (
 
   &.in-post {
     margin-bottom: 1rem;
+
+    @include media(wide) {
+      margin-bottom: -1.2rem
+    }
   }
 
   .todays-date {
