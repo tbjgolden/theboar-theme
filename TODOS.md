@@ -1,4 +1,3 @@
-- "Hottest content"
 - Search, top links
 - Tagline
 - Fix single pages (as opposed to posts)
