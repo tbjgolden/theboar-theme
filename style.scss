@@ -1100,8 +1100,11 @@ $categories: (
 #top-navigation {
   display: inline;
 
-  ul {
+  * {
     display: inline;
+  }
+
+  ul {
     list-style: none;
     padding: 0;
   }
