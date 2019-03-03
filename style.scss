@@ -857,7 +857,6 @@ $categories: (
     overflow: hidden;
 
     img {
-      transform-origin: 50% 20%;
       transition: transform 1s ease-out;
     }
 
@@ -865,7 +864,7 @@ $categories: (
     &:focus,
     &:active {
       img {
-        transform: scale3d(1.05, 1.05, 1);
+        transform: scale3d(1.01, 1.01, 1) translate3d(-4px, 0, 0);
         transition: transform .2s ease-in-out;
       }
     }
