@@ -1067,7 +1067,9 @@ $categories: (
   transform: translate3d(0, 50%, 0);
 
   &:hover {
-    transform: translate3d(-50%, -40%, 0);
+    span {
+      transform: translate3d(-50%, -40%, 0);
+    }
   }
 
   span {
