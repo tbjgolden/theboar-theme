@@ -7,6 +7,7 @@
 
   document.addEventListener("DOMContentLoaded", function(event) {
     var pageEl = document.querySelector('#page');
+    var resizeTimeout = null;
     var prevPageElWidth;
 
     fixWidth();
@@ -21,6 +22,11 @@
     function unfixWidth () {
       if (pageEl) {
         pageEl.style.width = prevPageElWidth;
+        [].slice.call((document.querySelectorAll('img') || []), 0)
+          .forEach((img, i) => {
+            img.style.visibility = img.oldVisibility;
+          });
+        resizeTimeout = null;
       }
     }
 
@@ -57,11 +63,15 @@
 
     // on window resize
     window.addEventListener("resize", function (event) {
-      [].slice.call((document.querySelectorAll('img') || []), 0)
-        .forEach((img, i) => {
-          img.style.visibility = 'hidden';
-        });
-      console.log(event);
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(unfixWidth, 100);
+      if (!resizeTimeout) {
+        [].slice.call((document.querySelectorAll('img') || []), 0)
+          .forEach((img, i) => {
+            img.oldVisibility = img.style.visibility;
+            img.style.visibility = 'hidden';
+          });
+      }
     });
   });
 })());
