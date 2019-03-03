@@ -4,13 +4,24 @@ window.addEventListener("keyup", function(event) {
   }
 });
 
-
 ((function () {
   var wordCharRegex = /[A-Za-z0-9]/i
 
   function $ (s) {
     return [].slice.call((document.querySelectorAll(s) || []), 0);
   }
+
+  $('.scroll-to-content').forEach(function (el) {
+    var content = $(el.getAttribute('href'))[0];
+
+    el.addEventListener('click', function (event) {
+      event.stopPropagation();
+      event.preventDefault();
+      if (content) content.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      return false;
+    });
+  });
+  
 
   document.addEventListener("DOMContentLoaded", function(event) {
     var pageEl = document.querySelector('#page');
