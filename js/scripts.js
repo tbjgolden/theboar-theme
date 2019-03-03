@@ -34,3 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       } catch (e) {}
     });
 });
+
+window.addEventListener("resize", function (event) {
+  console.log(event);
+});
