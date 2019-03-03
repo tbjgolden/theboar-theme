@@ -525,6 +525,8 @@ input[type="color"],
 textarea {
   -webkit-backface-visibility: hidden;
   -webkit-appearance: none;
+  padding: 0 .2rem;
+  background-color: rgba(127, 127, 127, .3);
 }
 
 input[type="search"] {
@@ -1089,7 +1091,15 @@ $categories: (
   color: rgb(127, 127, 127);
   padding: 0 2px;
 
-  &.in-post {
+  form {
+    padding: .2rem;
+
+    input {
+      padding: 0 .2rem;
+    }
+  }
+
+  &.no-logo-below {
     margin-bottom: 1rem;
 
     @include media(wide) {

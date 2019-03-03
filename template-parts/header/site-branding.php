@@ -15,15 +15,13 @@
   <?php
   if ( has_nav_menu( 'menu-2' ) || ( is_front_page() && is_home() ) || is_category() ) {
     echo '<div class="top-line';
-    if ( is_front_page() && is_home() ) {
-      echo ' in-homepage';
-    } elseif ( is_category() ) {
-      echo ' in-category';
-    } elseif ( is_singular( 'post' ) ) {
-      echo ' in-post';
+
+    if ( (is_front_page() && is_home()) || is_category() ) {
+      echo ' has-logo-below';
+    } else {
+      echo ' no-logo-below';
     }
     echo '">';
-
 
     if ( ( is_front_page() && is_home() ) || is_category() ) {
       echo '<div class="todays-date">' .
