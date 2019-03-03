@@ -29,15 +29,15 @@
       '</div><div class="spacer">  &mdash;  </div>';
     }
 
-    echo '<nav id="top-navigation" class="top-navigation" aria-label="Top Menu">' .
-      wp_nav_menu(
-        array(
-          'theme_location' => 'menu-2',
-          'menu_class'     => 'top-menu',
-          'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-        )
-      ) .
-    '</nav><!-- #top-navigation -->';
+    echo '<nav id="top-navigation" class="top-navigation" aria-label="Top Menu">';
+    wp_nav_menu(
+      array(
+        'theme_location' => 'menu-2',
+        'menu_class'     => 'top-menu',
+        'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+      )
+    );
+    echo '</nav><!-- #top-navigation -->';
 
     echo '</div>';
   }
