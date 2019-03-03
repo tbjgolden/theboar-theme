@@ -1118,6 +1118,8 @@ $categories: (
 }
 
 .top-line {
+  display: flex;
+  flex-wrap: wrap;
   font-size: .7rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -1127,18 +1129,17 @@ $categories: (
   padding: 0 2px;
 
   &.in-post {
-    text-align: right;
     margin-bottom: 1rem;
   }
 
   .todays-date {
+    flex: 9999 0 auto;
     display: inline-block;
+    margin-right: 1rem;
   }
 
-  .spacer {
-    white-space: pre;
-    display: inline-block;
-    padding: 0 .5rem;
+  nav {
+    flex: 1 1 auto;
   }
 }
 

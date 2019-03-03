@@ -3,4 +3,5 @@
 - Fix single pages (as opposed to posts)
 - Fix about page
 - Test grid layout (ensure it looks nice at every column number)
-- Release
+- Release :)
+- Header 2.0
