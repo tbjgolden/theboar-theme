@@ -1,3 +1,10 @@
+window.addEventListener("keyup", function(event) {
+  if (event.keyCode === 9) {
+    document.body.className.add('has-tabbed');
+  }
+});
+
+
 ((function () {
   var wordCharRegex = /[A-Za-z0-9]/i
 
