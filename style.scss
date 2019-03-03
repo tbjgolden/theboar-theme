@@ -998,21 +998,20 @@ $categories: (
   }
 
   .list-item {
-    display: block;
+    display: flex;
     margin-top: 1rem;
 
     &::before {
-      display: inline-block;
-      width: 1.5rem;
       counter-increment: rank;
       content: counter(rank);
       font-size: $font__size-xl;
+      margin: 0 .4rem 0 0;
+      flex: 0 0 auto;
       color: #000;
     }
 
     li {
-      display: inline-block;
-      width: calc(100% - 1.5rem);
+      flex: 1 1 auto;
       font-size: $font__size-sm;
       font-family: $font__heading;
       font-weight: bold;
