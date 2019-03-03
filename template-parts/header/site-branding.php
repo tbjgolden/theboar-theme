@@ -15,8 +15,7 @@
   <?php
   if ( has_nav_menu( 'menu-2' ) ) {
     echo '
-      <nav id="top-navigation" class="top-navigation"
-           aria-label="' . esc_attr_e( 'Top Menu', 'twentynineteen' ) . '">' .
+      <nav id="top-navigation" class="top-navigation" aria-label="Top Menu">' .
         wp_nav_menu(
           array(
             'theme_location' => 'menu-2',
