@@ -1095,7 +1095,7 @@ $categories: (
   }
 
   li:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: .5rem;
   }
 }
 
@@ -1251,7 +1251,7 @@ article.entry {
 }
 
 .footer-navigation li:not(:last-child) > a {
-  margin-right: 8px;
+  margin-right: .5rem;
 }
 
 .entry-content > p:first-child:not(.no-dropcap) {
