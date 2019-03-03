@@ -1066,18 +1066,18 @@ $categories: (
   height: 3rem;
   transform: translate3d(0, 50%, 0);
 
-  &:hover {
-    span {
-      transform: translate3d(-50%, -40%, 0);
-    }
-  }
-
   span {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -55%, 0);
     transition: transform .1s ease-in-out;
+  }
+
+  &:hover {
+    span {
+      transform: translate3d(-50%, -45%, 0);
+    }
   }
 }
 
