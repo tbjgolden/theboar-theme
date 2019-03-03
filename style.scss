@@ -1000,16 +1000,18 @@ $categories: (
     margin-top: 1rem;
 
     li {
-      &::before {
-        counter-increment: rank;
-        content: counter(rank);
-      }
-
       font-size: $font__size-sm;
       font-family: $font__heading;
       font-weight: bold;
       font-variation-settings: 'wght' 650;
       line-height: $font__line-height-heading;
+
+      &::before {
+        counter-increment: rank;
+        content: counter(rank);
+        font-size: $font__size-lg;
+        color: #000;
+      }
     }
   }
 }
@@ -1020,7 +1022,6 @@ $categories: (
   position: absolute;
   top: ((128px - 96px) / 2);
   left: 0;
-
 
   font-size: 96px;
   height: 96px;
