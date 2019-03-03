@@ -864,7 +864,7 @@ $categories: (
     &:focus,
     &:active {
       img {
-        transform: scale3d(1.01, 1.01, 1) translate3d(-4px, 0, 0);
+        transform: scale3d(1.01, 1.01, 1) translate3d(0, -4px, 0);
         transition: transform .3s ease-in-out;
       }
     }
