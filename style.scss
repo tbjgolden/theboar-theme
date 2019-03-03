@@ -864,8 +864,21 @@ $categories: (
     &:focus,
     &:active {
       img {
-        transform: scale3d(1.01, 1.01, 1);
+        transform: scale3d(1.02, 1.02, 1);
         transition: transform .3s ease-in-out;
+      }
+    }
+  }
+
+  .big-cell {
+    .cell-link {
+      &:hover,
+      &:focus,
+      &:active {
+        img {
+          transform: scale3d(1.01, 1.01, 1);
+          transition: transform .3s ease-in-out;
+        }
       }
     }
   }

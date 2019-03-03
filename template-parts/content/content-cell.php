@@ -20,6 +20,12 @@ foreach ($post_cats as $cat) {
     break;
   }
 }
+
+$is_big_cell = in_array( $GLOBALS['POST_COUNT'], array(1, 4, 8, 13, 17));
+if ( $is_big_cell ) {
+  $classes .= ' big-cell';
+}
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="<?php echo $classes; ?>">
@@ -27,7 +33,7 @@ foreach ($post_cats as $cat) {
     <a class="cell-link" href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark">
       <?php
         $sizes = '(max-width: 606px) calc(100vw - 44px), (max-width: 893px) calc(50vw - 30px), 420px';
-        if ( in_array( $GLOBALS['POST_COUNT'], array(1, 4, 8, 13, 17)) ) {
+        if ( $is_big_cell ) {
           $sizes = '(max-width: 893px) calc(100vw - 44px), 840px';
         }
         the_post_thumbnail('medium_large', array( 'sizes' => $sizes ) );
