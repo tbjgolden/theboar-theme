@@ -649,7 +649,7 @@ $icon-open: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class
 $icon-close: '%3C/svg%3E';
 
 #site-navigation {
-  max-width: 600px;
+  max-width: 32em;
 
   a {
     font-size: $font__size-md;
@@ -661,7 +661,7 @@ $icon-close: '%3C/svg%3E';
     &[href*='/category/'] {
       background-color: #000;
       color: #fff;
-      padding: 0 4px;
+      padding: 0 .25em;
     }
   }
 
