@@ -13,22 +13,36 @@
   </a>
 
   <?php
-  if ( has_nav_menu( 'menu-2' ) ) {
-    echo '
-      <nav id="top-navigation" class="top-navigation" aria-label="Top Menu">' .
-        wp_nav_menu(
-          array(
-            'theme_location' => 'menu-2',
-            'menu_class'     => 'top-menu',
-            'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-          )
-        ) .
-      '</nav><!-- #top-navigation -->';
+  if ( has_nav_menu( 'menu-2' ) || ( is_front_page() && is_home() ) || is_category() ) {
+    echo '<div class="top-line';
+    if ( is_front_page() && is_home() ) {
+      echo ' in-homepage';
+    } elseif ( is_category() ) {
+      echo ' in-category';
+    }
+    echo '">';
+
+
+    if ( ( is_front_page() && is_home() ) || is_category() ) {
+      echo '<div class="todays-date">' .
+        esc_html( date_i18n( get_option( 'date_format' ), time() ) ) .
+      '</div>';
+    }
+
+    echo '<nav id="top-navigation" class="top-navigation" aria-label="Top Menu">' .
+      wp_nav_menu(
+        array(
+          'theme_location' => 'menu-2',
+          'menu_class'     => 'top-menu',
+          'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        )
+      ) .
+    '</nav><!-- #top-navigation -->';
+
+    echo '</div>';
   }
 
   if ( ( is_front_page() && is_home() ) || is_category() ) {
-    echo '<div class="todays-date">' . esc_html( date_i18n( get_option( 'date_format' ), time() ) ) . '</div>';
-
     echo '
     <h1 class="site-title">
       <a href="' . esc_url( home_url( "/" ) ) . '" rel="home">
