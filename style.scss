@@ -21,6 +21,7 @@ body {
   line-height: $font__line-height-body;
   margin: 0;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 :focus {
@@ -726,12 +727,6 @@ $categories: (
   article.post-cat-#{$cat-id} .entry-content > p:first-child::first-letter {
     color: darken($color, 10%);
   }
-
-  // .cell.cell-cat-#{$cat-id} {
-  //   .cell-header::before {
-  //     background-color: $color !important;
-  //   }
-  // }
 }
 
 .cells {

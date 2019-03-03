@@ -6,21 +6,21 @@
   }
 
   document.addEventListener("DOMContentLoaded", function(event) {
-    var gridEl = document.querySelector('.cells');
-    var prevGridElWidth;
+    var pageEl = document.querySelector('#page');
+    var prevPageElWidth;
 
-    fixGridWidth();
+    fixWidth();
 
-    function fixGridWidth () {
-      if (gridEl) {
-        prevGridElWidth = gridEl.style.width;
-        gridEl.style.width = gridEl.offsetWidth + 'px';
+    function fixWidth () {
+      if (pageEl) {
+        prevPageElWidth = pageEl.style.width;
+        pageEl.style.width = pageEl.offsetWidth + 'px';
       }
     }
 
-    function unfixGridWidth () {
-      if (gridEl) {
-        gridEl.style.width = prevGridElWidth;
+    function unfixWidth () {
+      if (pageEl) {
+        pageEl.style.width = prevPageElWidth;
       }
     }
 
