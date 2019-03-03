@@ -649,7 +649,7 @@ $icon-open: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' class
 $icon-close: '%3C/svg%3E';
 
 #site-navigation {
-  max-width: 32em;
+  max-width: 30rem;
 
   a {
     font-size: $font__size-md;
@@ -676,6 +676,8 @@ $icon-close: '%3C/svg%3E';
     }
   }
 }
+
+
 
 .cell .cell-footer .cell-category-link {
   color: #fff;
@@ -1154,6 +1156,10 @@ $categories: (
       color: #fff !important;
       text-decoration: underline !important;
     }
+  }
+
+  #site-navigation {
+    max-width: 33rem;
   }
 }
 
