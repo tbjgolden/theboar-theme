@@ -1086,15 +1086,15 @@ $categories: (
   font-family: $font__heading;
   color: rgb(127, 127, 127);
   padding: 0 2px;
-}
-
-#top-navigation {
-  display: inline;
 
   .spacer {
     white-space: pre;
     display: inline-block;
   }
+}
+
+#top-navigation {
+  display: inline;
 
   ul {
     display: inline;
