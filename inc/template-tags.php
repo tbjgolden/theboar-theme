@@ -92,11 +92,6 @@ if ( ! function_exists( 'twentynineteen_entry_footer' ) ) :
       }
     }
 
-    // Comment count.
-    if ( ! is_singular() ) {
-      twentynineteen_comment_count();
-    }
-
     // Edit post link.
     edit_post_link(
       sprintf(
