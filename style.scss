@@ -1120,6 +1120,10 @@ $categories: (
   }
 }
 
+.excerpt {
+
+}
+
 .site-header.featured-image {
   a[href] {
     color: rgba(255, 255, 255, .8) !important;
@@ -1173,10 +1177,6 @@ $categories: (
 
 .byline {
   font-size: $font__size-md;
-
-  a {
-    color: #fff;
-  }
 }
 
 .posted-on,
