@@ -27,7 +27,7 @@ get_header();
       // Start the Loop.
       while ( have_posts() ) {
         the_post();
-        get_template_part( 'template-parts/content/content-listitem' );
+        get_template_part( 'template-parts/content/content-excerpt' );
       }
 
       // Previous/next page navigation.
@@ -41,7 +41,6 @@ get_header();
         </h2>
       </header><!-- .page-header -->
     <?php endif; ?>
-    ?>
     </main><!-- #main -->
   </section><!-- #primary -->
 
