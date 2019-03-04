@@ -11,10 +11,10 @@
 
 ?>
 
-<a href="<?php echo get_permalink(); ?>" class="list-item" rel="bookmark">
+<a href="<?php echo get_permalink(); ?>" class="excerpt" rel="bookmark">
   <?php twentynineteen_post_thumbnail(); ?>
-  <?php the_title( '<li>', '</li>' ); ?>
-  <div class="excerpt">
+  <?php the_title( '<div class="excerpt-title">', '</div>' ); ?>
+  <div class="excerpt-text">
     <?php the_excerpt(); ?>
   </div><!-- .excerpt -->
   <footer class="entry-footer">
