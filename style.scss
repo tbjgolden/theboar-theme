@@ -1122,6 +1122,7 @@ $categories: (
 
 .excerpt {
   display: flex;
+  flex-wrap: wrap;
 
   .post-thumbnail {
     flex: 1 0 auto;
