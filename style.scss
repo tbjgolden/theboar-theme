@@ -1131,9 +1131,10 @@ $categories: (
     max-width: 100%;
     min-height: 180px;
     margin: 0 1rem 1rem 0;
-    object-fit: cover;
     background-color: #eee;
-    background-size: cover;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
   }
 
   .post-thumbnail {
