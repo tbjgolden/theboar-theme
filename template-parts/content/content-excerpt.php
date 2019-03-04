@@ -31,7 +31,7 @@
           twentynineteen_get_icon_svg( 'clock', 16 ) .
           '<span class="screen-reader-text">Published on</span>' .
           ' <time class="entry-date published" datetime="' . esc_attr( get_the_date( DATE_W3C ) ) . '">' .
-            esc_html( date_i18n( get_option( 'date_format' ), $timestamp ) ) .
+            esc_html( date_i18n( get_option( 'date_format' ), get_the_time( 'U' ) ) ) .
         '</time></span>';
 
         $categories_list = get_the_category_list( ', ' );
