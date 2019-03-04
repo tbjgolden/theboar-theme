@@ -1166,6 +1166,7 @@ $categories: (
     font-weight: bold;
     font-variation-settings: 'wght' 750;
     font-family: $font__heading;
+    line-height: $font__line-height-heading;
   }
 
   .excerpt-text {
