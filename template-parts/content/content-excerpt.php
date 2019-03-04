@@ -12,7 +12,7 @@
 ?>
 
 <div class="excerpt<?php if ( ! twentynineteen_can_show_post_thumbnail() ) { echo ' no-thumbnail'; } ?>" rel="bookmark">
-  <?php twentynineteen_post_thumbnail(); ?>
+  <a class="excerpt-image" href="<?php echo get_permalink(); ?>" style="url('<?php echo get_the_post_thumbnail_url(); ?>')"></a>
   <div class="excerpt-text">
     <?php the_title( '<a class="excerpt-name" href="' . get_permalink() . '">', '</a>' ); ?>
     <span class="excerpt-body">

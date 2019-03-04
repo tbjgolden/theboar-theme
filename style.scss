@@ -1126,8 +1126,7 @@ $categories: (
   width: 100%;
   flex-wrap: wrap;
 
-  &.no-thumbnail::before {
-    content: '';
+  .excerpt-image {
     flex: 1 0 260px;
     width: 260px;
     max-width: 100%;
@@ -1135,6 +1134,7 @@ $categories: (
     margin: 0 1rem 1rem 0;
     object-fit: cover;
     background-color: #eee;
+    background-size: cover;
   }
 
   .post-thumbnail {
