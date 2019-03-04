@@ -1131,7 +1131,7 @@ $categories: (
   }
 
   .post-thumbnail img {
-    flex: 9999 0 auto;
+    flex: 1 0 auto;
     width: 260px;
     max-width: 100%;
     height: 180px;
@@ -1140,7 +1140,7 @@ $categories: (
   }
 
   .excerpt-text {
-    flex: 1 0 300px;
+    flex: 9999 0 300px;
     margin: 0 0 1rem;
   }
 
