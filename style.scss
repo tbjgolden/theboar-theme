@@ -507,7 +507,7 @@ input[type="submit"] {
   cursor: pointer;
   background-color: rgba(127, 127, 127, .1);
   border: 1px solid rgba(127, 127, 127, .1);
-  padding: .25rem;
+  padding: .3rem;
   color: #000;
 }
 
@@ -1097,7 +1097,7 @@ $categories: (
   padding: 0 2px;
 
   .search-submit {
-    padding: .3rem;
+    padding: .25rem;
   }
 
   &.no-logo-below {
