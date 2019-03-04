@@ -33,17 +33,13 @@
           esc_html( date_i18n( get_option( 'date_format' ), $timestamp ) ) .
       '</time></span>';
 
-      /* translators: used between list items, there is a space after the comma. */
-      $categories_list = get_the_category_list( __( ', ', 'twentynineteen' ) );
+      $categories_list = get_the_category_list( ', ' );
       if ( $categories_list ) {
-        echo (
-          /* translators: 1: SVG icon. 2: posted in label, only visible to screen readers. 3: list of categories. */
-          '<span class="cat-links">' .
+        echo '<span class="cat-links">' .
           twentynineteen_get_icon_svg( 'archive', 16 ) .
           ' <span class="screen-reader-text">Posted in</span>' .
           $categories_list .
-          '</span>'
-        ); // WPCS: XSS OK.
+        '</span>';
       }
       ?>
     </span><!-- .entry-footer -->
