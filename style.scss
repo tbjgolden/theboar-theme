@@ -1144,7 +1144,7 @@ $categories: (
 
   .post-thumbnail-inner {
     position: relative;
-    flex: 1 0 260px;
+    display: inline-block;
     width: 260px;
     max-width: 100%;
     height: 180px;
