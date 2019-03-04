@@ -15,9 +15,7 @@
   <?php twentynineteen_post_thumbnail(); ?>
   <a href="<?php echo get_permalink(); ?>">
     <?php the_title( '<span class="excerpt-title">', '</span>' ); ?>
-    <span class="excerpt-text">
-      <?php the_excerpt(); ?>
-    </span><!-- .excerpt-text -->
+    <?php the_excerpt( '<span class="excerpt-text">', '</span>' ); ?>
     <span class="entry-footer">
       <?php twentynineteen_entry_footer(); ?>
     </span><!-- .entry-footer -->
