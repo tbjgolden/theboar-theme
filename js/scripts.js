@@ -12,6 +12,7 @@ window.addEventListener("keyup", function(event) {
   }
 
   $('.search-form').forEach(function (el) {
+    el.style.visibility = 'visible';
     el.addEventListener('submit', function (event) {
       var inputs = $('input', event.target)
       for (var i = inputs.length - 1; i >= 0; i--) {
