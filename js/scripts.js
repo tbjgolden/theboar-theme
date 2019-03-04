@@ -11,19 +11,21 @@ window.addEventListener("keyup", function(event) {
     return [].slice.call(((el || document).querySelectorAll(s) || []), 0);
   }
 
-  $('.search-form').forEach(function (el) {
-    el.style.visibility = 'visible';
-    el.addEventListener('submit', function (event) {
-      var inputs = $('input', event.target)
-      for (var i = inputs.length - 1; i >= 0; i--) {
-        if (!inputs[i].value) {
-          event.stopPropagation();
-          event.preventDefault();
-          return false;
+  setTimeout(function () {
+    $('.search-form').forEach(function (el) {
+      el.style.visibility = 'visible';
+      el.addEventListener('submit', function (event) {
+        var inputs = $('input', event.target)
+        for (var i = inputs.length - 1; i >= 0; i--) {
+          if (!inputs[i].value) {
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+          }
         }
-      }
+      });
     });
-  });
+  }, 1000);
 
   $('.scroll-to-content').forEach(function (el) {
     var content = $(el.getAttribute('href'))[0];
