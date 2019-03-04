@@ -1140,6 +1140,13 @@ $categories: (
     object-fit: cover;
   }
 
+  .excerpt-name {
+    font-size: $font__size-md;
+    font-weight: bold;
+    font-variation-settings: 'wght' 750;
+    font-family: $font__heading;
+  }
+
   .excerpt-text {
     flex: 9999 0 300px;
     margin: 0 0 1rem;

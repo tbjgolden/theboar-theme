@@ -14,7 +14,7 @@
 <div class="excerpt" rel="bookmark">
   <?php twentynineteen_post_thumbnail(); ?>
   <div class="excerpt-text">
-    <?php the_title( '<a href="' . get_permalink() . '">', '</a>' ); ?>
+    <?php the_title( '<a class="excerpt-name" href="' . get_permalink() . '">', '</a>' ); ?>
     <span class="excerpt-body">
       <?php the_excerpt( ''); ?>
     </span><!-- .excerpt-body -->
