@@ -695,6 +695,10 @@ $categories: (
   article.post-cat-#{$cat-id} .entry-content > p:first-child::first-letter {
     color: darken($color, 10%);
   }
+
+  .cat-name.cat-id-#{$cat-id} {
+    color: $color;
+  }
 }
 
 .cells {
@@ -869,6 +873,17 @@ $categories: (
       margin: 0;
       color: #fff;
       line-height: $font__line-height-pre;
+    }
+  }
+
+  .cell-header-bottom-line {
+    > * {
+      font-size: $font__size-sm;
+    }
+
+    .cat-name {
+      background: rgba(0, 0, 0, .2);
+      padding: 0 .2rem;
     }
   }
 
