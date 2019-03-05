@@ -676,8 +676,11 @@ $categories: (
   $color: nth($data, 2);
   $icon: nth($data, 3);
 
+  $dark: hsl(hue($color), saturation($color), 20%);
+  $light: hsl(hue($color), saturation($color), 80%);
+
   #site-navigation a[href*='/category/#{$name}/'] {
-    color: darken($color, 10%);
+    color: $dark;
     background-color: transparent !important;
 
     &:hover,
@@ -693,11 +696,11 @@ $categories: (
   }
 
   article.post-cat-#{$cat-id} .entry-content > p:first-child::first-letter {
-    color: darken($color, 10%);
+    color: $dark;
   }
 
   .cat-name.cat-id-#{$cat-id} {
-    color: lighten($color, 20%);
+    color: $light;
   }
 }
 
