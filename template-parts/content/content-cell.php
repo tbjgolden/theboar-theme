@@ -14,9 +14,11 @@ $classes = join(' ', array_filter(get_post_class(), function ($class_name) {
 })) . ' cell';
 
 $post_cats = wp_get_post_categories(get_the_ID());
+$cat_string = '';
 foreach ($post_cats as $cat) {
   if ($cat < 15) {
     $classes .= ' cell-cat-' . $cat;
+    $cat_string = '<span class="cat-name cat-id-' . $cat . '">' . get_cat_name($cat) . '</span>';
     break;
   }
 }
@@ -42,6 +44,12 @@ if ( $is_big_cell ) {
         <?php the_title('<h2 class="cell-title">', '</h2>'); ?>
         <div class="cell-content">
           <?php the_excerpt(); ?>
+          <div class="cell-content-bottom-line">
+            <span class="post-time-ago">
+              <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
+            </span>
+            <?php echo $cat_string; ?>
+          </div>
         </div><!-- .cell-content -->
       </header><!-- .cell-header -->
     </a>
