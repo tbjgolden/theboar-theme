@@ -673,11 +673,12 @@ $categories: (
 
 @each $name, $data in $categories {
   $cat-id: nth($data, 1);
-  $color: nth($data, 2);
+  $hex: nth($data, 2);
   $icon: nth($data, 3);
 
-  $dark: hsl(hue($color), 100%, 35%);
-  $light: hsl(hue($color), 100%, 65%);
+  $color: hsl(hue($hex), ((100% + saturation($hex)) / 2), 50%);
+  $dark: hsl(hue($color), saturation($color), 35%);
+  $light: hsl(hue($color), saturation($color), 65%);
 
   #site-navigation a[href*='/category/#{$name}/'] {
     color: $dark;
