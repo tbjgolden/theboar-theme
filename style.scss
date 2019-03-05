@@ -894,6 +894,7 @@ $categories: (
 
 .cell-header-bottom-line {
   display: flex;
+  align-items: flex-end;
 }
 
 .post-time-ago {
@@ -903,14 +904,15 @@ $categories: (
 
 .cat-name {
   flex: 0 0 auto;
-  padding: 0 .2rem;
+  padding: .2rem;
+  border-radius: 9999px;
   background: #fff;
   color: #000;
   text-transform: uppercase;
   font-weight: bold;
   font-variation-settings: 'wght' 650;
   font-family: $font__heading;
-  font-size: $font__size-sm;
+  font-size: 0.6rem;
 }
 
 .crp_related_list {
