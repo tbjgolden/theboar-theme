@@ -38,13 +38,17 @@ if ( $is_big_cell ) {
         if ( $is_big_cell ) {
           $sizes = '(max-width: 893px) calc(100vw - 44px), 840px';
         }
-        the_post_thumbnail('medium_large', array( 'sizes' => $sizes ) );
+        the_post_thumbnail('medium', array( 'sizes' => $sizes ) );
       ?>
       <header class="cell-header">
         <?php the_title('<h2 class="cell-title">', '</h2>'); ?>
-        <div class="cell-content">
-          <?php the_excerpt(); ?>
-        </div><!-- .cell-content -->
+        <?php
+          if ( $is_big_cell ) {
+            echo '<div class="cell-content">';
+            the_excerpt();
+            echo '</div>';
+          }
+        ?>
         <div class="cell-header-bottom-line">
           <span class="post-time-ago">
             <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
