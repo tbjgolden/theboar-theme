@@ -697,7 +697,7 @@ $categories: (
   }
 
   .cat-name.cat-id-#{$cat-id} {
-    color: $color;
+    color: darken($color, 10%);
   }
 }
 
@@ -876,26 +876,6 @@ $categories: (
     }
   }
 
-  .cell-header-bottom-line {
-    display: flex;
-
-    .post-time-ago {
-      flex: 1 1 0;
-      font-size: $font__size-sm;
-    }
-
-    .cat-name {
-      flex: 0 0 auto;
-      background: rgba(0, 0, 0, .2);
-      padding: 0 .2rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-variation-settings: 'wght' 650;
-      font-family: $font__heading;
-      font-size: $font__size-sm;
-    }
-  }
-
   .comments-link {
     &:not(:empty)::before {
       content: '';
@@ -909,6 +889,28 @@ $categories: (
       vertical-align: -0.5ex;
     }
   }
+}
+
+
+.cell-header-bottom-line {
+  display: flex;
+}
+
+.post-time-ago {
+  flex: 1 1 0;
+  font-size: $font__size-sm;
+}
+
+.cat-name {
+  flex: 0 0 auto;
+  padding: 0 .2rem;
+  background: #fff;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-variation-settings: 'wght' 650;
+  font-family: $font__heading;
+  font-size: $font__size-sm;
 }
 
 .crp_related_list {
