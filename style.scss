@@ -972,6 +972,8 @@ $categories: (
   grid-column: span 1 / -1;
   grid-row: auto / span 2;
   padding: 1rem;
+  background-position: bottom center;
+  background-size: cover;
 
   .most-read-title {
     margin: 0;

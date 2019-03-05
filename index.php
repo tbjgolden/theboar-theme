@@ -30,7 +30,7 @@ get_header();
       }
       ?>
 
-      <div class="cell most-read">
+      <div class="cell most-read" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/piazza.jpg')">
         <h3 class="most-read-title">
           <?php echo twentynineteen_get_icon_svg( 'mouse-pointer', 22 ); ?>Most Read
         </h3>
