@@ -44,13 +44,13 @@ if ( $is_big_cell ) {
         <?php the_title('<h2 class="cell-title">', '</h2>'); ?>
         <div class="cell-content">
           <?php the_excerpt(); ?>
-          <div class="cell-content-bottom-line">
-            <span class="post-time-ago">
-              <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
-            </span>
-            <?php echo $cat_string; ?>
-          </div>
         </div><!-- .cell-content -->
+        <div class="cell-header-bottom-line">
+          <span class="post-time-ago">
+            <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago'; ?>
+          </span>
+          <?php echo $cat_string; ?>
+        </div>
       </header><!-- .cell-header -->
     </a>
   </figure><!-- .cell-thumbnail -->
