@@ -895,24 +895,20 @@ $categories: (
 .cell-header-bottom-line {
   display: flex;
   align-items: flex-end;
-}
-
-.post-time-ago {
-  flex: 1 1 0;
-  font-size: $font__size-sm;
-}
-
-.cat-name {
-  flex: 0 0 auto;
-  padding: .05rem .2rem;
-  border-radius: 9999px;
-  background: rgba(0, 0, 0, .8);
-  color: #fff;
+  padding-top: .2rem;
   text-transform: uppercase;
   font-weight: bold;
-  font-variation-settings: 'wght' 650;
+  font-size: .7rem;
   font-family: $font__heading;
-  font-size: 0.7rem;
+  font-variation-settings: 'wght' 650;
+
+  .post-time-ago {
+    flex: 1 1 0;
+  }
+
+  .cat-name {
+    flex: 0 0 auto;
+  }
 }
 
 .crp_related_list {
