@@ -877,17 +877,22 @@ $categories: (
   }
 
   .cell-header-bottom-line {
-    > * {
+    display: flex;
+
+    .post-time-ago {
+      flex: 1 1 0;
       font-size: $font__size-sm;
     }
 
     .cat-name {
+      flex: 0 0 auto;
       background: rgba(0, 0, 0, .2);
       padding: 0 .2rem;
       text-transform: uppercase;
       font-weight: bold;
       font-variation-settings: 'wght' 650;
       font-family: $font__heading;
+      font-size: $font__size-sm;
     }
   }
 
