@@ -32,8 +32,7 @@ get_header();
 
       <div class="cell most-read">
         <h3 class="most-read-title">
-          <?php echo twentynineteen_get_icon_svg( 'mouse-pointer', 22 ); ?>
-          Most Read
+          <?php echo twentynineteen_get_icon_svg( 'mouse-pointer', 22 ); ?>Most Read
         </h3>
         <ul class="most-read-body">
           <?php

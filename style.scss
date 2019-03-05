@@ -974,6 +974,10 @@ $categories: (
 
   .most-read-title {
     margin: 0;
+
+    svg {
+      margin-right: .4rem;
+    }
   }
 
   .most-read-body {
