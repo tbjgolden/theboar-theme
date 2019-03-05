@@ -35,7 +35,7 @@ get_header();
           <?php echo twentynineteen_get_icon_svg( 'mouse-pointer', 22 ); ?>
           Most Read
         </h3>
-        <ul class="most-read">
+        <ul class="most-read-body">
           <?php
             $query = new WP_Query(
               array(

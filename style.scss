@@ -976,9 +976,10 @@ $categories: (
     margin: 0;
   }
 
-  .most-read {
+  .most-read-body {
     list-style: none;
     padding: 0;
+    max-width: 250px;
     counter-reset: rank;
   }
 
