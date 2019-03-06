@@ -23,11 +23,11 @@ foreach ($post_cats as $cat) {
   }
 }
 
-$is_big_cell = in_array( $GLOBALS['POST_COUNT'], array(1, 4, 8, 13, 17));
-if ( $is_big_cell ) {
+if ( $GLOBALS['POST_COUNT'] === 1) {
+  $classes .= ' featured-cell';
+} elseif (in_array( $GLOBALS['POST_COUNT'], array(4, 8, 13, 17))) {
   $classes .= ' big-cell';
 }
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" class="<?php echo $classes; ?>">
