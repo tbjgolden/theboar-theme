@@ -676,8 +676,8 @@ $categories: (
   $hex: nth($data, 2);
   $icon: nth($data, 3);
 
-  $color: hsl(hue($hex), saturation($hex), 50%);
-  $dark: hsl(hue($hex), saturation($hex), 35%);
+  $color: hsl(hue($hex), saturation($hex), 45%);
+  $dark: hsl(hue($hex), saturation($hex), 40%);
   $light: hsl(hue($hex), saturation($hex), 65%);
 
   #site-navigation a[href*='/category/#{$name}/'] {
