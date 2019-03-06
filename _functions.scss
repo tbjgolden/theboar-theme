@@ -1,0 +1,31 @@
+@function ensure-brightness($color, $lum, $min: false) {
+  $r: red($color);
+  $g: green($color);
+  $b: blue($color);
+
+  $color-luminance: (.2126 * $r) + (.7152 * $g) + (.0722 * $b);
+
+  $delta: $color-luminance - $lum;
+
+  @if $min and $delta > 0 {
+    $red: max(0, $r - $delta);
+    $green: max(0, $g - $delta);
+    $blue: max(0, $b - $delta);
+    @return rgb($red, $green, $blue);
+  } @else if $min and $delta < 0 {
+    $red: min(255, $r + $delta);
+    $green: min(255, $g + $delta);
+    $blue: min(255, $b + $delta);
+    @return rgb($red, $green, $blue);
+  }
+
+  @return $color;
+}
+
+@function ensure-max-brightness($color, $lum: 162) {
+  @return ensure-brightness($color, $lum);
+}
+
+@function ensure-min-brightness($color, $lum: 93) {
+  @return ensure-brightness($color, $lum, true);
+}
