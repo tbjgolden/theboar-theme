@@ -681,13 +681,13 @@ $categories: (
   $light: hsl(hue($color), saturation($color), 65%);
 
   #site-navigation a[href*='/category/#{$name}/'] {
-    color: $dark;
+    color: $color;
     background-color: transparent !important;
 
     &:hover,
     &:focus,
     &:active {
-      color: $color;
+      color: $dark;
     }
   }
 
