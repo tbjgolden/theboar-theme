@@ -22,13 +22,19 @@ get_header();
       <?php
       $GLOBALS['POST_COUNT'] = 1;
 
-      $query = new WP_Query(array('cat' => '34573', 'posts_per_page' => 4));
+      $query = new WP_Query(array('cat' => '34573', 'posts_per_page' => 1));
       while ( $query->have_posts() ) {
         $query->the_post();
         get_template_part( 'template-parts/content/content-cell' );
         $GLOBALS['POST_COUNT'] += 1;
       }
       ?>
+
+      <div class="cell sponsors">
+        <a class="sponsor" href="https://warwick.ac.uk/services/sport/join/?utm_source=theboar.org&utm_medium=banner&fbclid=IwAR2X6Nfg9Yoz-w88MiBLJpOdJLDuk0bxCC3TTjzlL6UTsxok9JP0skjtgGQ" target="_blank">
+          <img alt="Warwick Sport" src="/wp-content/uploads/2018/10/Sport-webanner.png">
+        </a>
+      </div>
 
       <div class="cell most-read" style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/piazza.jpg')">
         <h3 class="most-read-title">
@@ -56,15 +62,6 @@ get_header();
         </ul>
       </div>
 
-      <div class="cell sponsors">
-        <a class="sponsor" href="https://warwick.ac.uk/services/sport/join/?utm_source=theboar.org&utm_medium=banner&fbclid=IwAR2X6Nfg9Yoz-w88MiBLJpOdJLDuk0bxCC3TTjzlL6UTsxok9JP0skjtgGQ" target="_blank">
-          <img alt="Warwick Sport" src="/wp-content/uploads/2018/10/Sport-webanner.png">
-        </a>
-        <a class="sponsor" href="https://www.capgemini.com/gb-en/corporate-responsibility/our-corporate-responsibility-sustainability-approach/community-engagement/" target="_blank">
-          <img alt="Capgemini" src="/wp-content/uploads/2018/10/Home-Page-Banner-W1370px-x-H250px.jpg">
-        </a>
-      </div>
-
       <?php
       $query = new WP_Query(array('cat' => '2,4', 'posts_per_page' => 6));
       while ( $query->have_posts() ) {
@@ -72,7 +69,15 @@ get_header();
         get_template_part( 'template-parts/content/content-cell' );
         $GLOBALS['POST_COUNT'] += 1;
       }
+      ?>
 
+      <div class="cell sponsors">
+        <a class="sponsor" href="https://www.capgemini.com/gb-en/corporate-responsibility/our-corporate-responsibility-sustainability-approach/community-engagement/" target="_blank">
+          <img alt="Capgemini" src="/wp-content/uploads/2018/10/Home-Page-Banner-W1370px-x-H250px.jpg">
+        </a>
+      </div>
+
+      <?php
       $query = new WP_Query(array('cat' => '12,3,13,5,10', 'posts_per_page' => 7));
       while ( $query->have_posts() ) {
         $query->the_post();
