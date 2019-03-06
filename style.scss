@@ -763,6 +763,11 @@ $categories: (
       }
     }
 
+    &.featured-cell {
+      grid-column: 1 / -2;
+      grid-row: 1 / span 2;
+    }
+
     &:not(.has-post-thumbnail) {
       .cell-header {
         top: 0;
