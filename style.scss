@@ -718,6 +718,7 @@ $categories: (
   .cell {
     background-color: #eee;
 
+    &.featured-cell,
     &.big-cell {
       grid-column: auto / span 2;
       grid-row: auto / span 2;
