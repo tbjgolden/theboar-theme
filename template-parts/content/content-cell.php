@@ -23,9 +23,12 @@ foreach ($post_cats as $cat) {
   }
 }
 
-if ( $GLOBALS['POST_COUNT'] === 1) {
+$is_big_cell = in_array( $GLOBALS['POST_COUNT'], array(4, 8, 13, 17));
+$is_featured_cell = $GLOBALS['POST_COUNT'] === 1;
+
+if ( $is_featured_cell ) {
   $classes .= ' featured-cell';
-} elseif (in_array( $GLOBALS['POST_COUNT'], array(4, 8, 13, 17))) {
+} elseif ( $is_big_cell ) {
   $classes .= ' big-cell';
 }
 ?>
@@ -43,7 +46,7 @@ if ( $GLOBALS['POST_COUNT'] === 1) {
       <header class="cell-header">
         <?php the_title('<h2 class="cell-title">', '</h2>'); ?>
         <?php
-          if ( $is_big_cell ) {
+          if ( $is_featured_cell || $is_big_cell ) {
             echo '<div class="cell-content">';
             the_excerpt();
             echo '</div>';
